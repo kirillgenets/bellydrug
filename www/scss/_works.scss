@@ -1,0 +1,158 @@
+/********
+WORKS
+********/
+
+.works {
+	list-style: none;
+	width: 320px;
+	margin: 0 auto 3px auto;
+	padding: 0;
+}
+
+.works__item {
+	padding-bottom: 14px;
+}
+
+.works__item-image {
+	width: $mobile;
+	height: 350px;
+}
+
+.works__item-title {
+	margin-top: 5px;
+	margin-bottom: 1px;
+	color: $green;
+	font-family: 'PF Centro Sans Pro Medium', Tahoma, sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 29px;
+}
+
+.works__item-subtitle {
+	margin-top: 0;
+	margin-bottom: 7px;
+	color: #000;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.works__item-info {
+	width: 292px;
+	margin: 0 auto 12px auto;
+	color: #000;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.works__item-more {
+	padding: 4px 35px;
+	background-color: $grey;
+	color: #fff;
+	font-size: 14px;
+
+	&:active {
+		opacity: 0.5;
+	}
+
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: $tablet) {
+	
+	.works {
+		width: $tablet;
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	.works__item {
+		display: flex;
+		align-items: center;
+		padding-bottom: 0;
+		
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+		}
+
+	}
+
+	.works__item-image {
+		width: 385px;
+		height: 350px;
+		vertical-align: bottom;
+	}
+
+	.works__item:nth-child(odd) .works__item-image {
+		margin-right: 60px;
+	}
+
+	.works__item:nth-child(even) .works__item-info {
+		margin-right: 30px;
+	}
+
+	.works__item-title {
+		margin-top: 0;
+		margin-bottom: 15px;
+		font-size: 30px;
+	}
+
+	.works__item-subtitle {
+		margin-bottom: 3px;
+	}
+
+	.works__item-more {
+		transition: 0.3s;
+		
+		&:hover {
+			background-color: $green;
+		}
+
+	}
+
+}
+
+@media screen and (min-width: $desktop) {
+
+	.works {
+		width: $desktop;
+		margin-bottom: 36px;
+		padding-top: 60px;
+	}
+
+	.works__item-image {
+		width: 645px;
+		height: 396px;
+	}
+
+	.works__item-info {
+		width: 400px;
+		margin-bottom: 17px;
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	.works__item:nth-child(odd) .works__item-image {
+		margin-right: 60px;
+	}
+
+	.works__item:nth-child(even) .works__item-info {
+		margin-right: 120px;
+	}
+
+	.works__item-title {
+		font-size: 36px;
+		margin-bottom: 7px;
+	}
+
+	.works__item-subtitle {
+		margin-bottom: 10px;
+		font-size: 24px;
+	}
+
+	.works__item-more {
+		padding: 4px 32px;
+		font-size: 18px;
+	}
+
+}

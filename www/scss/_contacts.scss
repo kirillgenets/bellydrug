@@ -1,0 +1,67 @@
+/********
+CONTACTS
+********/
+
+.contacts {
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.contacts__title {
+	margin-top: 15px;
+	margin-bottom: 12px;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.contacts__phone {
+	width: 160px;
+	box-sizing: border-box;
+	margin: 0 auto 20px auto;
+	padding: 4px 0 3px 0;
+	background-color: $grey;
+	color: #fff;
+	font-size: 14px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: $tablet) {
+
+	.contacts {
+		padding-bottom: 31px;
+	}
+
+	.contacts__title {
+		margin-top: 36px;
+		margin-bottom: 22px;
+		font-size: 30px;
+	}
+
+	.contacts__phone {
+		width: 280px;
+		padding: 9px 0;
+		font-size: 18px;
+	}
+	
+}
+
+@media screen and (min-width: $desktop) {
+
+	.contacts {
+		padding-bottom: 76px;		
+	}
+
+	.contacts__title {
+		margin-top: 62px;
+		font-size: 36px;
+	}
+
+	.contacts__phone {
+		width: 312px;
+		margin-bottom: 60px;
+		padding: 14px 0;
+		font-size: 24px;
+	}
+
+}

@@ -1,0 +1,64 @@
+/**********
+PORTFOLIO
+**********/
+
+.portfolio {
+	text-align: center;
+}
+
+.portfolio__title {
+	margin: 0;
+	padding-top: 17px;
+	padding-bottom: 19px;
+	background-color: $grey;
+	color: #fff;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.portfolio__more {
+	margin-top: 3px;
+	padding: 5px 25px 4px 25px;
+	background-color: $green;
+	color: #fff;
+	font-size: 14px;
+
+	&:active {
+		opacity: 0.5;
+	}
+
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: $tablet) {
+
+	.portfolio__title {		
+		padding: 34px 0;
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.portfolio__more {
+		transition: 0.3s;
+
+		&:hover {
+			background-color: $grey;
+		}
+
+	}
+	
+}
+
+@media screen and (min-width: $desktop) {
+
+	.portfolio__title {
+		padding: 57px 0;
+		font-size: 36px;
+	}
+
+	.portfolio__more {
+		font-size: 18px;
+	}
+
+}
