@@ -1,0 +1,24 @@
+/**********
+TYPOGRAPHY
+**********/
+
+@font-face{
+	font-family: 'Montseratt Medium';
+	src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+		url('../fonts/Montserrat-Medium.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montseratt Bold';
+	src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+		url('../fonts/Montserrat-Bold.woff') format('woff');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Montseratt SemiBold';
+	src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+		url('../fonts/Montserrat-SemiBold.woff') format('woff');
+	font-display: swap;
+}
