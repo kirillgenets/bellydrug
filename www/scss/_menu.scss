@@ -25,15 +25,6 @@ MENU
 
 	background-color: $transparent-white;
 
-	transition: 0.3s;
-
-	&:hover {
-		height: 125px;
-		border-top: 3px solid #fff;
-		border-left: 3px solid #fff;
-		border-right: 3px solid #fff;
-	}
-
 	&--active {
 		height: 125px;
 		border-top: 3px solid #fff;
@@ -45,4 +36,63 @@ MENU
 
 .menu__item--active a {
 	cursor: default;
+}
+
+/*RESPONSIVE*/
+
+/*HOVER + ACTIVE эффекты только при разрешении выше планшетного*/
+@media screen and (min-width: 768px) {
+
+	.menu__item {
+		transition: 0.3s;
+
+		&:hover {
+			height: 125px;
+			border-top: 3px solid #fff;
+			border-left: 3px solid #fff;
+			border-right: 3px solid #fff;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.menu__item {
+		width: 65px;
+		height: 65px;
+		margin-right: 10px;
+
+		&--active {
+			height: 90px;
+			border-width: 2px;
+		}
+
+	}
+
+	.menu__item-image {
+		transform: scale(0.7);
+	}
+
+}
+
+@media screen and (max-width: 415px) {
+
+	.menu__item {
+		width: 45px;
+		height: 45px;
+		margin-right: 7px;
+
+		&--active {
+			height: 60px;
+			border-width: 2px;
+		}
+
+	}
+
+	.menu__item-image {
+		transform: scale(0.5);
+	}
+
 }
