@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*stylelint-disable*/
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -356,6 +357,7 @@ HEADER
   background-image: linear-gradient(to top right, rgba(254, 190, 250, 0.9) 0%, rgba(233, 218, 241, 0.9) 100%), url(../img/background-pink.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   color: #2b242b; }
 
 .header__heading {
@@ -370,12 +372,7 @@ HEADER
 .header__logo-img {
   width: 86px;
   height: 82px;
-  margin-right: 25px;
-  transition: 0.3s; }
-  .header__logo-img:hover {
-    opacity: 0.7; }
-  .header__logo-img:active {
-    opacity: 0.3; }
+  margin-right: 25px; }
 
 .header__contacts {
   display: flex;
@@ -394,7 +391,18 @@ HEADER
   margin-right: 0; }
 
 /*RESPONSIVE*/
+/*HOVER + ACTIVE эффекты только при разрешении выше планшетного*/
+@media screen and (min-width: 768px) {
+  .header__logo-img {
+    transition: 0.3s; }
+    .header__logo-img:hover {
+      opacity: 0.7; }
+    .header__logo-img:active {
+      opacity: 0.3; } }
+
 @media screen and (max-width: 1010px) {
+  .header {
+    padding-left: 50px; }
   .header__logo-img {
     width: 60px;
     height: 57px; }
@@ -402,6 +410,32 @@ HEADER
     padding: 30px 20px; }
   .header__number {
     font-size: 16px; } }
+
+@media screen and (max-width: 768px) {
+  .header__contacts {
+    flex-direction: column;
+    padding: 23px 25px 23px 35px; }
+  .header__number {
+    margin-right: 0;
+    font-size: 14px; } }
+
+@media screen and (max-width: 560px) {
+  .header__logo-img {
+    width: 48px;
+    height: 46px;
+    margin-right: 15px; }
+  .header__contacts {
+    padding: 17px 15px 17px 25px; }
+  .header__number {
+    font-family: 'Montseratt SemiBold', Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 400; } }
+
+@media screen and (max-width: 415px) {
+  .header {
+    padding-left: 20px; }
+  .header__contacts {
+    padding: 15px 5px 15px 7px; } }
 
 /*******
 NAV
@@ -418,19 +452,35 @@ NAV
   font-family: 'Montseratt Bold', Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 500;
-  color: #2b242b;
-  transition: 0.3s; }
-  .nav__item-link:hover {
-    opacity: 0.6; }
-  .nav__item-link:active {
-    opacity: 0.3; }
+  color: #2b242b; }
 
 /*RESPONSIVE*/
+/*HOVER + ACTIVE эффекты только при разрешении выше планшетного*/
+@media screen and (min-width: 768px) {
+  .nav__item-link {
+    transition: 0.3s; }
+    .nav__item-link:hover {
+      opacity: 0.6; }
+    .nav__item-link:active {
+      opacity: 0.3; } }
+
 @media screen and (max-width: 1010px) {
   .nav__list {
     width: 180px; }
   .nav__item-link {
     font-size: 16px; } }
+
+@media screen and (max-width: 560px) {
+  .nav__list {
+    width: 130px; }
+  .nav__item-link {
+    font-size: 14px; } }
+
+@media screen and (max-width: 415px) {
+  .nav__list {
+    width: 115px; }
+  .nav__item-link {
+    font-size: 13px; } }
 
 /*****************
 WOOD MINERAL INTRO
@@ -485,13 +535,6 @@ WOOD MINERAL INTRO
 @media screen and (max-width: 1010px) {
   .wood-mineral-intro {
     margin-bottom: 30px; }
-  .wood-mineral-intro__preview-img {
-    min-width: 300px;
-    width: 300px;
-    height: 509px;
-    margin-top: 35px; }
-  .wood-mineral-intro__info {
-    margin-top: 100px; }
   .wood-mineral-intro__counter {
     margin-bottom: 40px;
     font-size: 20px; }
@@ -500,7 +543,51 @@ WOOD MINERAL INTRO
     font-size: 20px; }
   .wood-mineral-intro__description {
     padding: 20px 25px 20px 0;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .wood-mineral-intro__preview-img {
+    min-width: 300px;
+    width: 300px;
+    height: 509px;
+    margin-top: 35px; } }
+
+@media screen and (max-width: 768px) {
+  .wood-mineral-intro__info {
+    margin-top: 70px;
+    margin-right: 30px; }
+  .wood-mineral-intro__counter {
+    margin-bottom: 20px; }
+  .wood-mineral-intro__description {
+    line-height: 1.25; }
+  .wood-mineral-intro__preview-img {
+    min-width: 250px;
+    width: 250px;
+    height: 424px; } }
+
+@media screen and (max-width: 560px) {
+  .wood-mineral-intro {
+    align-items: flex-end; }
+  .wood-mineral-intro__info {
+    margin-top: 30px; }
+  .wood-mineral-intro__counter {
+    margin-bottom: 10px;
+    font-size: 16px; }
+  .wood-mineral-intro__title {
+    margin-bottom: 10px;
+    font-size: 16px; }
+  .wood-mineral-intro__description {
+    font-size: 12px; }
+  .wood-mineral-intro__preview-img {
+    min-width: 155px;
+    width: 155px;
+    height: 262px;
+    margin-top: 0; } }
+
+@media screen and (max-width: 415px) {
+  .wood-mineral-intro__preview-img {
+    min-width: 100px;
+    width: 100px;
+    height: 169px;
+    margin-bottom: 40px; } }
 
 /********
 MENU
@@ -521,13 +608,7 @@ MENU
   height: 95px;
   box-sizing: border-box;
   margin-right: 20px;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: 0.3s; }
-  .menu__item:hover {
-    height: 125px;
-    border-top: 3px solid #fff;
-    border-left: 3px solid #fff;
-    border-right: 3px solid #fff; }
+  background-color: rgba(255, 255, 255, 0.3); }
   .menu__item--active {
     height: 125px;
     border-top: 3px solid #fff;
@@ -536,3 +617,36 @@ MENU
 
 .menu__item--active a {
   cursor: default; }
+
+/*RESPONSIVE*/
+/*HOVER + ACTIVE эффекты только при разрешении выше планшетного*/
+@media screen and (min-width: 768px) {
+  .menu__item {
+    transition: 0.3s; }
+    .menu__item:hover {
+      height: 125px;
+      border-top: 3px solid #fff;
+      border-left: 3px solid #fff;
+      border-right: 3px solid #fff; } }
+
+@media screen and (max-width: 768px) {
+  .menu__item {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px; }
+    .menu__item--active {
+      height: 90px;
+      border-width: 2px; }
+  .menu__item-image {
+    transform: scale(0.7); } }
+
+@media screen and (max-width: 415px) {
+  .menu__item {
+    width: 45px;
+    height: 45px;
+    margin-right: 7px; }
+    .menu__item--active {
+      height: 60px;
+      border-width: 2px; }
+  .menu__item-image {
+    transform: scale(0.5); } }
