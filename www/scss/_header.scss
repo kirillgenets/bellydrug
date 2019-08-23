@@ -3,13 +3,15 @@ HEADER
 *********/
 
 .header {
-	padding-left: 195px;
+	padding-left: 100px;
 
 	position: relative;
 
 	background-image: linear-gradient(to top right, rgba(254, 190, 250, 0.9) 0%, rgba(233, 218, 241, 0.9) 100%), url(../img/background-pink.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
+
+	color: $dark-purple;
 }
 
 .header__heading {
@@ -46,7 +48,6 @@ HEADER
 	font-family: 'Montseratt Bold', Tahoma, sans-serif;
 	font-size: 18px;
 	font-weight: 500;
-	color: $dark-purple;
 }
 
 .header__number:last-child {
