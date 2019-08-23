@@ -350,9 +350,61 @@ TYPOGRAPHY
 /*********
 HEADER
 *********/
+.header {
+  padding-left: 195px;
+  position: relative;
+  background-image: linear-gradient(to top right, rgba(254, 190, 250, 0.9) 0%, rgba(233, 218, 241, 0.9) 100%), url(../img/background-pink.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+.header__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header__nav-container {
+  display: flex;
+  align-items: center; }
+
+.header__logo-img {
+  width: 86px;
+  height: 82px;
+  margin-right: 25px; }
+
+.header__contacts {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 50px 40px;
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.header__number {
+  margin-right: 30px;
+  font-family: 'Montseratt Bold', Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2b242b; }
+
+.header__number:last-child {
+  margin-right: 0; }
+
 /*******
 NAV
 *******/
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 230px;
+  margin: 0;
+  padding: 0; }
+
+.nav__item-link {
+  font-family: 'Montseratt Bold', Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2b242b; }
+
 /************
 WOOD MINERAL INTRO
 ************/
