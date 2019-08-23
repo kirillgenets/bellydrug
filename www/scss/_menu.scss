@@ -1,3 +1,48 @@
 /********
 MENU
 ********/
+
+.menu__list {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+}
+
+.menu__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 95px;
+	height: 95px;
+	box-sizing: border-box;
+	margin-right: 20px;
+
+	background-color: $transparent-white;
+
+	transition: 0.3s;
+
+	&:hover {
+		height: 125px;
+		border-top: 3px solid #fff;
+		border-left: 3px solid #fff;
+		border-right: 3px solid #fff;
+	}
+
+	&--active {
+		height: 125px;
+		border-top: 3px solid #fff;
+		border-left: 3px solid #fff;
+		border-right: 3px solid #fff;
+	}
+
+}
+
+.menu__item--active a {
+	cursor: default;
+}

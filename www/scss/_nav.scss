@@ -18,4 +18,29 @@ NAV
 	font-size: 18px;
 	font-weight: 500;
 	color: $dark-purple;
+
+	transition: 0.3s;
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1010px) {
+
+	.nav__list {
+		width: 180px;
+	}
+
+	.nav__item-link {
+		font-size: 16px;
+	}
+
 }
