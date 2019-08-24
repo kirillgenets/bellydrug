@@ -99,3 +99,85 @@ PRODUCT
 	right: -170px;
 	top: -150px;
 }
+
+.product__sizes-list {
+	display: flex;
+	align-items: flex-end;
+
+	list-style: none;
+
+	margin: 70px auto 0 auto;
+	padding: 0;
+
+	background: linear-gradient(0deg, rgba(238,243,249,1) 70%, rgba(255,255,255,1) 70%);
+
+	&--small {
+		width: 970px;
+	}
+
+}
+
+.product__size-preview {
+	margin-right: 100px;
+	margin-bottom: 60px;
+
+	position: relative;
+
+	&::after {
+		content: '';
+
+		width: 50px;
+		height: 50px;
+		box-sizing: border-box;
+		border: 2px solid #ff7800;
+		border-radius: 50%;
+		padding-top: 14px;
+
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		background-color: #fff;
+
+		font-family: $font-bold;
+		font-size: 15px;
+		color: #ff7800;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	&--usual {
+		margin: 0;
+
+		&::after {
+			content: '4.5л';
+
+			right: 90px;
+			top: 50px;
+		}
+
+	}
+
+	&--20-liters {
+
+		&::after {
+			content: '20л';
+
+			right: -15px;
+			top: 15px;
+		}
+
+	}
+
+	&--25-kg {
+
+		&::after {
+			content: '25кг';
+
+			right: -15px;
+			top: -15px;
+		}
+
+	}
+
+}
