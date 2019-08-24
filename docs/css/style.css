@@ -383,7 +383,7 @@ HEADER
 
 .header__number {
   margin-right: 30px;
-  font-family: 'Montseratt Bold', Tahoma, sans-serif;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 500; }
 
@@ -427,7 +427,7 @@ HEADER
   .header__contacts {
     padding: 17px 15px 17px 25px; }
   .header__number {
-    font-family: 'Montseratt SemiBold', Tahoma, sans-serif;
+    font-family: "Montseratt SemiBold", Tahoma, sans-serif;
     font-size: 12px;
     font-weight: 400; } }
 
@@ -449,7 +449,7 @@ NAV
   padding: 0; }
 
 .nav__item-link {
-  font-family: 'Montseratt Bold', Tahoma, sans-serif;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #2b242b; }
@@ -498,7 +498,7 @@ WOOD MINERAL INTRO
 .wood-mineral-intro__counter {
   margin-top: 0;
   margin-bottom: 75px;
-  font-family: 'Montseratt Bold', Tahoma, sans-serif;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
   font-size: 25px;
   font-weight: 500; }
 
@@ -506,7 +506,7 @@ WOOD MINERAL INTRO
   max-width: 450px;
   margin-top: 0;
   margin-bottom: 40px;
-  font-family: 'Montseratt Bold', Tahoma, sans-serif;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
   font-size: 33px;
   font-weight: 500; }
 
@@ -650,3 +650,89 @@ MENU
       border-width: 2px; }
   .menu__item-image {
     transform: scale(0.5); } }
+
+/*********
+GOODS
+*********/
+.goods {
+  padding-top: 130px;
+  color: #252a4a; }
+
+.goods__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/*******
+PRODUCT
+********/
+.product__preview {
+  padding-top: 80px;
+  padding-bottom: 290px;
+  background: #f6f9fc; }
+
+.product__heading {
+  display: flex;
+  align-items: flex-end;
+  width: 940px;
+  margin: 0 auto;
+  padding: 30px 0 100px 45px;
+  position: relative;
+  background-color: #f1f1f5; }
+
+.product__fodder-image {
+  min-width: 102px;
+  width: 102px;
+  height: 102px;
+  margin-right: 15px; }
+
+.product__title {
+  max-width: 620px;
+  margin: 0;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
+  font-size: 39px;
+  font-weight: 500;
+  text-align: right; }
+
+.product__description-container {
+  max-width: 580px;
+  padding: 35px 40px;
+  position: absolute;
+  left: 130px;
+  top: 150px;
+  background-color: #fff; }
+
+.product__description {
+  margin: 0;
+  position: relative;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: right; }
+  .product__description::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 20px solid #fff;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    right: -60px;
+    top: 5px; }
+  .product__description::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 18px solid #f9e86f;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: -45px;
+    transform: rotate(-40deg); }
+
+.product__preview-image {
+  min-width: 338px;
+  height: 624px;
+  position: absolute;
+  right: -170px;
+  top: -150px; }
