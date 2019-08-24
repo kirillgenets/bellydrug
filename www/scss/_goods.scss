@@ -14,3 +14,29 @@ GOODS
 	margin: 0;
 	padding: 0;
 }
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1105px) {
+
+	.goods {
+		padding-top: 100px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.goods {
+		padding-top: 180px;
+	}
+
+}
+
+@media screen and (max-width: 490px) {
+
+	.goods {
+		padding-top: 100px;
+	}
+
+}
