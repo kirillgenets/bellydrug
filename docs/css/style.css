@@ -663,6 +663,9 @@ GOODS
   margin: 0;
   padding: 0; }
 
+.goods__item {
+  margin-bottom: 230px; }
+
 /*RESPONSIVE*/
 @media screen and (max-width: 1105px) {
   .goods {
@@ -682,16 +685,29 @@ PRODUCT
 .product__preview {
   padding-top: 80px;
   padding-bottom: 290px;
+  position: relative;
   background: #f6f9fc; }
+  .product__preview--classic::before {
+    content: '';
+    width: 28px;
+    height: 97px;
+    border-left: 3px solid #e8e8e8;
+    border-right: 3px solid #e8e8e8;
+    position: absolute;
+    left: 370px;
+    bottom: -10px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 45%, #e8e8e8 40%, #e8e8e8 55%, rgba(255, 255, 255, 0) 60%); }
 
 .product__heading {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   max-width: 940px;
   margin: 0 auto;
   padding: 30px 0 100px 45px;
   position: relative;
   background-color: #f1f1f5; }
+  .product__heading--wood-mineral {
+    align-items: flex-end; }
 
 .product__fodder-image {
   min-width: 102px;
@@ -731,7 +747,7 @@ PRODUCT
     position: absolute;
     right: -60px;
     top: 5px; }
-  .product__description::before {
+  .product__description--wood-mineral::before {
     content: '';
     width: 0;
     height: 0;
@@ -754,11 +770,10 @@ PRODUCT
   display: flex;
   align-items: flex-end;
   list-style: none;
+  width: 970px;
   margin: 70px auto 0 auto;
   padding: 0;
   background: linear-gradient(0deg, #eef3f9 70%, white 70%); }
-  .product__sizes-list--small {
-    width: 970px; }
 
 .product__size-preview {
   margin-right: 100px;
@@ -787,6 +802,8 @@ PRODUCT
       content: '4.5л';
       right: 90px;
       top: 50px; }
+  .product__size-preview--usual-classic::after {
+    content: '3кг'; }
   .product__size-preview--20-liters::after {
     content: '20л';
     right: -15px;
@@ -794,6 +811,16 @@ PRODUCT
   .product__size-preview--25-kg::after {
     content: '25кг';
     right: -15px;
+    top: -15px; }
+  .product__size-preview--8-5-kg::after {
+    content: '8.5кг'; }
+  .product__size-preview--20-kg::after {
+    content: '20кг';
+    right: -10px;
+    top: -15px; }
+  .product__size-preview--30-kg::after {
+    content: '30кг';
+    right: -10px;
     top: -15px; }
 
 /*RESPONSIVE*/
@@ -810,7 +837,7 @@ PRODUCT
     line-height: 1.25; }
     .product__description::after {
       right: -50px; }
-    .product__description::before {
+    .product__description--wood-mineral::before {
       bottom: -35px; }
   .product__preview-image {
     min-width: 150px;
@@ -842,6 +869,7 @@ PRODUCT
     top: -120px; }
   .product__sizes-list {
     justify-content: space-between;
+    width: 750px;
     margin-top: 40px; }
     .product__sizes-list--small {
       width: 650px; }
@@ -866,12 +894,24 @@ PRODUCT
     .product__size-preview--25-kg::after {
       right: 25px;
       top: 40px; }
+    .product__size-preview--8-5-kg::after {
+      right: 10px;
+      top: 60px; }
+    .product__size-preview--20-kg::after {
+      right: 20px;
+      top: 30px; }
+    .product__size-preview--30-kg::after {
+      right: 20px;
+      top: 30px; }
   .product__size-preview-img {
     transform: scale(0.5); }
     .product__size-preview-img--usual {
       width: 213px;
       height: 257px;
-      transform: scale(1); } }
+      transform: scale(1); }
+    .product__size-preview-img--usual-classic {
+      width: 216px;
+      height: 256px; } }
 
 @media screen and (max-width: 768px) {
   .product__preview {
@@ -888,28 +928,40 @@ PRODUCT
     left: calc(50% - 120px); }
   .product__description::after {
     display: none; }
-  .product__description::before {
+  .product__description--wood-mineral::before {
     bottom: -20px; }
   .product__preview-image {
     top: -250px;
     left: calc(50% - 88.5px); }
   .product__sizes-list {
+    width: 550px;
     background: linear-gradient(0deg, #eef3f9 50%, white 50%); }
     .product__sizes-list--small {
       width: 450px; }
+  .product__size-preview {
+    margin-right: 20px; }
   .product__size-preview-img--usual {
     width: 170px;
     height: 194px;
-    margin-right: 20px; } }
+    margin-right: 20px; }
+  .product__size-preview-img--usual-classic {
+    min-width: 150px;
+    margin-right: 0; } }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 560px) {
   .product__preview {
     padding-top: 180px; }
+    .product__preview--classic::before {
+      left: 20px;
+      bottom: -40px;
+      transform: scale(0.5); }
   .product__preview-image {
     min-width: 100px;
     height: 249px;
     top: -240px;
     left: calc(50% - 70px); }
+    .product__preview-image--classic {
+      top: -190px; }
   .product__sizes-list {
     flex-direction: column;
     align-items: center;

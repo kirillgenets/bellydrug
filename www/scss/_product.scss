@@ -6,12 +6,34 @@ PRODUCT
 	padding-top: 80px;
 	padding-bottom: 290px;
 
+	position: relative;
+
 	background: #f6f9fc;
+
+	&--classic {
+
+		&::before {
+			content: '';
+
+			width: 28px;
+			height: 97px;
+			border-left: 3px solid #e8e8e8;
+			border-right: 3px solid #e8e8e8;
+
+			position: absolute;
+			left: 370px;
+			bottom: -10px;
+
+			background: linear-gradient(90deg, rgba(255,255,255,0) 45%, rgba(232,232,232,1) 40%, rgba(232,232,232,1) 55%, rgba(255,255,255,0) 60%);
+		}
+
+	}
+
 }
 
 .product__heading {
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 
 	max-width: 940px;
 	margin: 0 auto;
@@ -20,6 +42,11 @@ PRODUCT
 	position: relative;
 
 	background-color: #f1f1f5;
+
+	&--wood-mineral {
+		align-items: flex-end;
+	}
+
 }
 
 .product__fodder-image {
@@ -73,20 +100,24 @@ PRODUCT
 		top: 5px;
 	}
 
-	&::before {
-		content: '';
+	&--wood-mineral {
 
-		width: 0;
-		height: 0;
-		border-top: 10px solid transparent;
-		border-left: 18px solid #f9e86f;
-		border-bottom: 10px solid transparent;
+		&::before {
+			content: '';
 
-		position: absolute;
-		left: 0;
-		bottom: -45px;
+			width: 0;
+			height: 0;
+			border-top: 10px solid transparent;
+			border-left: 18px solid #f9e86f;
+			border-bottom: 10px solid transparent;
 
-		transform: rotate(-40deg);
+			position: absolute;
+			left: 0;
+			bottom: -45px;
+
+			transform: rotate(-40deg);
+		}
+
 	}
 
 }
@@ -106,15 +137,11 @@ PRODUCT
 
 	list-style: none;
 
+	width: 970px;
 	margin: 70px auto 0 auto;
 	padding: 0;
 
 	background: linear-gradient(0deg, rgba(238,243,249,1) 70%, rgba(255,255,255,1) 70%);
-
-	&--small {
-		width: 970px;
-	}
-
 }
 
 .product__size-preview {
@@ -158,6 +185,14 @@ PRODUCT
 
 	}
 
+	&--usual-classic {
+
+		&::after {
+			content: '3кг';
+		}
+
+	}
+
 	&--20-liters {
 
 		&::after {
@@ -175,6 +210,36 @@ PRODUCT
 			content: '25кг';
 
 			right: -15px;
+			top: -15px;
+		}
+
+	}
+
+	&--8-5-kg {
+
+		&::after {
+			content: '8.5кг';
+		}
+
+	}
+
+	&--20-kg {
+
+		&::after {
+			content: '20кг';
+
+			right: -10px;
+			top: -15px;
+		}
+
+	}
+
+	&--30-kg {
+
+		&::after {
+			content: '30кг';
+
+			right: -10px;
 			top: -15px;
 		}
 
@@ -208,8 +273,12 @@ PRODUCT
 			right: -50px;
 		}
 
-		&::before {
-			bottom: -35px;
+		&--wood-mineral {
+
+			&::before {
+				bottom: -35px;
+			}
+
 		}
 
 	}
@@ -266,6 +335,7 @@ PRODUCT
 	.product__sizes-list {
 		justify-content: space-between;
 
+		width: 750px;
 		margin-top: 40px;
 
 		&--small {
@@ -316,6 +386,33 @@ PRODUCT
 
 		}
 
+		&--8-5-kg {
+
+			&::after {
+				right: 10px;
+				top: 60px;
+			}
+
+		}
+
+		&--20-kg {
+
+			&::after {
+				right: 20px;
+				top: 30px;
+			}
+
+		}
+
+		&--30-kg {
+
+			&::after {
+				right: 20px;
+				top: 30px;
+			}
+
+		}
+
 	}
 
 	.product__size-preview-img {
@@ -326,6 +423,11 @@ PRODUCT
 			height: 257px;
 
 			transform: scale(1);
+		}
+
+		&--usual-classic {
+			width: 216px;
+			height: 256px;
 		}
 
 	}
@@ -362,8 +464,12 @@ PRODUCT
 			display: none;
 		}
 
-		&::before {
-			bottom: -20px;
+		&--wood-mineral {
+
+			&::before {
+				bottom: -20px;
+			}
+
 		}
 
 	}
@@ -374,12 +480,18 @@ PRODUCT
 	}
 
 	.product__sizes-list {
+		width: 550px;
+
 		background: linear-gradient(0deg, rgba(238,243,249,1) 50%, rgba(255,255,255,1) 50%);
 
 		&--small {
 			width: 450px;
 		}
 
+	}
+
+	.product__size-preview {
+		margin-right: 20px;
 	}
 
 	.product__size-preview-img {
@@ -390,14 +502,31 @@ PRODUCT
 			margin-right: 20px;
 		}
 
+		&--usual-classic {
+			min-width: 150px;
+			margin-right: 0;
+		}
+
 	}
 
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 560px) {
 
 	.product__preview {
 		padding-top: 180px;
+
+		&--classic {
+
+			&::before {
+				left: 20px;
+				bottom: -40px;
+
+				transform: scale(0.5);
+			}
+
+		}
+
 	}
 
 	.product__preview-image {
@@ -406,6 +535,11 @@ PRODUCT
 
 		top: -240px;
 		left: calc(50% - 70px);
+
+		&--classic {
+			top: -190px;
+		}
+
 	}
 
 	.product__sizes-list {
