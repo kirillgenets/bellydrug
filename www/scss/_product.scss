@@ -141,7 +141,44 @@ PRODUCT
 	margin: 70px auto 0 auto;
 	padding: 0;
 
+	position: relative;
+
 	background: linear-gradient(0deg, rgba(238,243,249,1) 70%, rgba(255,255,255,1) 70%);
+
+	&--classic {
+
+		&::before {
+			content: '';
+
+			width: 278px;
+			height: 413px;
+
+			position: absolute;
+			left: 200px;
+			top: -80px;
+			z-index: 0;
+
+			background-image: url(../img/little-cat-arm-up.png);
+
+			transform: scale(0.5);
+		}
+
+		&::after {
+			content: '';
+
+			width: 100%;
+			height: 70%;
+
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 1;
+
+			background-color: rgba(238,243,249,1);
+		}
+
+	}
+
 }
 
 .product__size-preview {
@@ -149,6 +186,7 @@ PRODUCT
 	margin-bottom: 60px;
 
 	position: relative;
+	z-index: 2;
 
 	&::after {
 		content: '';
@@ -488,6 +526,16 @@ PRODUCT
 			width: 450px;
 		}
 
+		&--classic {
+
+			&::before {
+				top: -150px;
+
+				transform: scale(0.3);
+			}
+
+		}
+
 	}
 
 	.product__size-preview {
@@ -551,6 +599,15 @@ PRODUCT
 		padding-top: 20px;
 
 		background: rgba(238,243,249,1);
+
+		&--classic {
+
+			&::before {
+				display: none;
+			}
+
+		}
+
 	}
 
 	.product__size-preview {
