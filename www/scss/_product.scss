@@ -47,6 +47,12 @@ PRODUCT
 		align-items: flex-end;
 	}
 
+	&--reverse {
+		flex-direction: row-reverse;
+
+		padding-right: 45px;
+	}
+
 }
 
 .product__fodder-image {
@@ -54,6 +60,12 @@ PRODUCT
 	width: 102px;
 	height: 102px;
 	margin-right: 15px;
+
+	&--reverse {
+		margin-right: 0;
+		margin-left: 25px;
+	}
+
 }
 
 .product__title {
@@ -75,6 +87,12 @@ PRODUCT
 	top: 150px;
 
 	background-color: #fff;
+
+	&--reverse {
+		left: auto;
+		right: 80px;
+	}
+
 }
 
 .product__description {
@@ -120,6 +138,17 @@ PRODUCT
 
 	}
 
+	&--reverse {
+
+		&::after {
+			right: auto;
+			left: -60px;
+
+			transform: rotate(180deg);
+		}
+
+	}
+
 }
 
 .product__preview-image {
@@ -129,6 +158,11 @@ PRODUCT
 	position: absolute;
 	right: -170px;
 	top: -150px;
+
+	&--reverse {
+		left: -75px;
+	}
+
 }
 
 .product__sizes-list {
@@ -223,7 +257,24 @@ PRODUCT
 
 	}
 
-	&--usual-classic {
+	&--usual-wood-mineral {
+
+		&::before {
+			content: '';
+
+			width: 50px;
+			height: 31px;
+
+			position: absolute;
+			left: 10px;
+			top: 50%;
+
+			background-image: url(../img/cat-paws.png);
+		}
+
+	}
+
+	&--usual-3-liters {
 
 		&::after {
 			content: '3кг';
@@ -463,7 +514,7 @@ PRODUCT
 			transform: scale(1);
 		}
 
-		&--usual-classic {
+		&--usual-3-liters {
 			width: 216px;
 			height: 256px;
 		}
@@ -550,7 +601,7 @@ PRODUCT
 			margin-right: 20px;
 		}
 
-		&--usual-classic {
+		&--usual-3-liters {
 			min-width: 150px;
 			margin-right: 0;
 		}
