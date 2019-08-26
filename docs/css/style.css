@@ -354,11 +354,12 @@ HEADER
 .header {
   padding-left: 100px;
   position: relative;
-  background-image: linear-gradient(to top right, rgba(254, 190, 250, 0.9) 0%, rgba(233, 218, 241, 0.9) 100%), url(../img/background-pink.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  color: #2b242b; }
+  background-position: center; }
+  .header--wood-mineral {
+    background-image: linear-gradient(to top right, rgba(254, 190, 250, 0.9) 0%, rgba(233, 218, 241, 0.9) 100%), url(../img/background-pink.jpg);
+    color: #2b242b; }
 
 .header__heading {
   display: flex;
