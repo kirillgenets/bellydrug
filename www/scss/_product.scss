@@ -53,6 +53,23 @@ PRODUCT
 		padding-right: 45px;
 	}
 
+	&--premium {
+
+		&::after {
+			content: '';
+
+			width: 222px;
+			height: 230px;
+
+			position: absolute;
+			right: -90px;
+			bottom: -280px;
+
+			background-image: url(../img/little-cat-sitting.png);
+		}
+
+	}
+
 }
 
 .product__fodder-image {
@@ -370,6 +387,14 @@ PRODUCT
 
 		}
 
+		&--reverse {
+
+			&::after {
+				left: -50px;
+			}
+
+		}
+
 	}
 
 	.product__preview-image {
@@ -390,6 +415,15 @@ PRODUCT
 
 		max-width: 450px;
 		padding-bottom: 60px;
+
+		&--premium {
+
+			&::after {
+				display: none;
+			}
+
+		}
+
 	}
 
 	.product__fodder-image {
@@ -402,11 +436,23 @@ PRODUCT
 		max-width: 230px;
 
 		font-size: 20px;
+
+		&--reverse {
+			max-width: 100%;
+			text-align: left;
+		}
+
 	}
 
 	.product__description-container {
 		left: -80px;
 		top: 110px;
+
+		&--reverse {
+			left: auto;
+			right: -90px;
+		}
+
 	}
 
 	.product__description {

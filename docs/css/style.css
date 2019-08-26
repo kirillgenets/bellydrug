@@ -675,9 +675,11 @@ GOODS
   .goods {
     padding-top: 180px; } }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 560px) {
   .goods {
-    padding-top: 100px; } }
+    padding-top: 100px; }
+  .goods__item {
+    margin-bottom: 100px; } }
 
 /*******
 PRODUCT
@@ -711,6 +713,14 @@ PRODUCT
   .product__heading--reverse {
     flex-direction: row-reverse;
     padding-right: 45px; }
+  .product__heading--premium::after {
+    content: '';
+    width: 222px;
+    height: 230px;
+    position: absolute;
+    right: -90px;
+    bottom: -280px;
+    background-image: url(../img/little-cat-sitting.png); }
 
 .product__fodder-image {
   min-width: 102px;
@@ -883,6 +893,8 @@ PRODUCT
       right: -50px; }
     .product__description--wood-mineral::before {
       bottom: -35px; }
+    .product__description--reverse::after {
+      left: -50px; }
   .product__preview-image {
     min-width: 150px;
     height: 436px; } }
@@ -894,6 +906,8 @@ PRODUCT
     align-items: center;
     max-width: 450px;
     padding-bottom: 60px; }
+    .product__heading--premium::after {
+      display: none; }
   .product__fodder-image {
     min-width: 70px;
     width: 70px;
@@ -901,9 +915,15 @@ PRODUCT
   .product__title {
     max-width: 230px;
     font-size: 20px; }
+    .product__title--reverse {
+      max-width: 100%;
+      text-align: left; }
   .product__description-container {
     left: -80px;
     top: 110px; }
+    .product__description-container--reverse {
+      left: auto;
+      right: -90px; }
   .product__description {
     font-size: 13px; }
   .product__preview-image {

@@ -37,10 +37,14 @@ GOODS
 
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 560px) {
 
 	.goods {
 		padding-top: 100px;
+	}
+
+	.goods__item {
+		margin-bottom: 100px;
 	}
 
 }
