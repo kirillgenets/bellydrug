@@ -180,6 +180,10 @@ PRODUCT
 		left: -75px;
 	}
 
+	&--mix {
+		left: -205px;
+	}
+
 }
 
 .product__sizes-list {
@@ -453,6 +457,10 @@ PRODUCT
 			right: -90px;
 		}
 
+		&--mix {
+			right: -30px;
+		}
+
 	}
 
 	.product__description {
@@ -612,6 +620,11 @@ PRODUCT
 	.product__preview-image {
 		top: -250px;
 		left: calc(50% - 88.5px);
+
+		&--mix {
+			left: 70px;
+		}
+
 	}
 
 	.product__sizes-list {
@@ -683,6 +696,11 @@ PRODUCT
 
 		&--classic {
 			top: -190px;
+		}
+
+		&--mix {
+			top: -230px;
+			left: calc(50% - 120px);
 		}
 
 	}
