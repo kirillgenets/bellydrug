@@ -665,6 +665,8 @@ GOODS
 
 .goods__item {
   margin-bottom: 230px; }
+  .goods__item:last-child {
+    margin-bottom: 0; }
 
 /*RESPONSIVE*/
 @media screen and (max-width: 1105px) {

@@ -17,6 +17,11 @@ GOODS
 
 .goods__item {
 	margin-bottom: 230px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
 }
 
 /*RESPONSIVE*/
