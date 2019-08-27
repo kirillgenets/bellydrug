@@ -344,6 +344,11 @@ TYPOGRAPHY
   font-display: swap; }
 
 @font-face {
+  font-family: 'Montseratt ExtraBold';
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-display: swap; }
+
+@font-face {
   font-family: 'Montseratt SemiBold';
   src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-display: swap; }
@@ -360,6 +365,18 @@ HEADER
   .header--wood-mineral {
     background-image: linear-gradient(to top right, rgba(254, 190, 250, 0.9) 0%, rgba(233, 218, 241, 0.9) 100%), url(../img/background-pink.jpg);
     color: #2b242b; }
+  .header--zeolitic {
+    background-image: linear-gradient(62deg, rgba(220, 228, 239, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/background-zeolit.jpg);
+    color: #252a4a; }
+    .header--zeolitic::before {
+      content: '';
+      width: 100%;
+      height: 335px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      background-image: url(../img/grid-for-bg.png); }
 
 .header__heading {
   display: flex;
@@ -368,7 +385,8 @@ HEADER
 
 .header__nav-container {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  z-index: 1; }
 
 .header__logo-img {
   width: 86px;
@@ -380,7 +398,10 @@ HEADER
   list-style: none;
   margin: 0;
   padding: 50px 40px;
+  z-index: 1;
   background-color: rgba(255, 255, 255, 0.3); }
+  .header__contacts--zeolitic {
+    background-color: rgba(221, 229, 239, 0.7); }
 
 .header__number {
   margin-right: 30px;
@@ -421,6 +442,8 @@ HEADER
     font-size: 14px; } }
 
 @media screen and (max-width: 560px) {
+  .header::before {
+    display: none; }
   .header__logo-img {
     width: 48px;
     height: 46px;
@@ -454,6 +477,8 @@ NAV
   font-size: 18px;
   font-weight: 500;
   color: #2b242b; }
+  .nav__item-link--blue {
+    color: #252a4a; }
 
 /*RESPONSIVE*/
 /*HOVER + ACTIVE эффекты только при разрешении выше планшетного*/
@@ -1052,3 +1077,200 @@ PRODUCT
       display: none; }
   .product__size-preview {
     margin: 0 0 -40px 0; } }
+
+/**********
+ZEOLITIC INTRO
+**********/
+.zeolitic-intro {
+  display: flex;
+  margin-bottom: 40px; }
+
+.zeolitic-intro__info {
+  max-width: 800px;
+  margin-top: 160px;
+  z-index: 1; }
+
+.zeolitic-intro__title {
+  margin: 0;
+  padding: 20px 0;
+  position: relative;
+  font-family: "Montseratt Extrabold", Tahoma, sans-serif;
+  font-size: 120px;
+  white-space: nowrap; }
+  .zeolitic-intro__title::after {
+    content: '';
+    width: 70px;
+    height: 6px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background-color: #f8e587; }
+  .zeolitic-intro__title::before {
+    content: '';
+    width: 70px;
+    height: 6px;
+    position: absolute;
+    left: 8px;
+    bottom: 10px;
+    background-color: #f8e587; }
+
+.zeolitic-intro__description {
+  max-width: 500px;
+  padding: 50px 55px 50px 0;
+  position: relative;
+  background-color: rgba(149, 168, 196, 0.15);
+  font-size: 15px;
+  line-height: 1.7; }
+  .zeolitic-intro__description::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    background-color: rgba(149, 168, 196, 0.15); }
+
+.zeolitic-intro__preview {
+  z-index: 1; }
+
+.zeolitic-intro__counter {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
+  font-size: 25px;
+  font-weight: 500; }
+
+.zeolitic-intro__name {
+  max-width: 280px;
+  margin-top: 0;
+  margin-bottom: 10;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
+  font-size: 25px;
+  font-weight: 500; }
+
+.zeolitic-intro__img-wrapper {
+  position: relative; }
+  .zeolitic-intro__img-wrapper::after {
+    content: '';
+    width: 197px;
+    height: 133px;
+    position: absolute;
+    left: -47px;
+    bottom: 70px;
+    background-image: url(../img/black-cat-arm-up.png);
+    background-size: 100%; }
+
+.zeolitic-intro__preview-img {
+  min-width: 400px;
+  width: 400px;
+  height: 390px; }
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1290px) {
+  .zeolitic-intro__info {
+    max-width: 600px;
+    margin-right: 30px; }
+  .zeolitic-intro__title {
+    font-size: 90px; } }
+
+@media screen and (max-width: 1120px) {
+  .zeolitic-intro__title {
+    font-size: 60px; }
+    .zeolitic-intro__title::before {
+      width: 50px;
+      height: 4px;
+      left: 5px; }
+    .zeolitic-intro__title::after {
+      width: 50px;
+      height: 4px;
+      right: 40px; }
+  .zeolitic-intro__description {
+    max-width: 400px;
+    padding: 25px 35px 25px 0;
+    line-height: 1.4; } }
+
+@media screen and (max-width: 910px) {
+  .zeolitic-intro__info {
+    margin-top: 100px; }
+  .zeolitic-intro__title {
+    font-size: 48px; }
+    .zeolitic-intro__title::after {
+      right: 20px; }
+  .zeolitic-intro__description {
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 1.25; }
+  .zeolitic-intro__img-wrapper::after {
+    left: -55px;
+    bottom: 38px;
+    transform: scale(0.7); }
+  .zeolitic-intro__preview-img {
+    min-width: 300px;
+    width: 300px;
+    height: 290px; } }
+
+@media screen and (max-width: 725px) {
+  .zeolitic-intro__info {
+    margin-top: 45px;
+    margin-right: 90px; }
+  .zeolitic-intro__title {
+    font-size: 35px; }
+    .zeolitic-intro__title::before {
+      width: 30px;
+      height: 3px;
+      left: 0; }
+    .zeolitic-intro__title::after {
+      width: 30px;
+      height: 3px;
+      right: 5px;
+      top: 15px; }
+  .zeolitic-intro__description {
+    max-width: 180px;
+    font-size: 12px; }
+  .zeolitic-intro__counter {
+    margin-bottom: 10px;
+    font-size: 18px; }
+  .zeolitic-intro__name {
+    font-size: 20px; }
+  .zeolitic-intro__img-wrapper::after {
+    left: -75px;
+    bottom: 30px; }
+  .zeolitic-intro__preview-img {
+    min-width: 247px;
+    width: 247px;
+    height: 241px; } }
+
+@media screen and (max-width: 630px) {
+  .zeolitic-intro__info {
+    margin-top: 0;
+    margin-right: 30px; } }
+
+@media screen and (max-width: 565px) {
+  .zeolitic-intro__title {
+    font-size: 25px; }
+  .zeolitic-intro__description {
+    padding: 15px 15px 15px 0;
+    line-height: 1.1; }
+  .zeolitic-intro {
+    align-items: center; }
+  .zeolitic-intro__img-wrapper::after {
+    display: none; }
+  .zeolitic-intro__preview-img {
+    min-width: 190px;
+    width: 190px;
+    height: 184px; } }
+
+@media screen and (max-width: 450px) {
+  .zeolitic-intro__info {
+    margin-right: 10px; }
+  .zeolitic-intro__title {
+    font-size: 20px; }
+  .zeolitic-intro__preview-img {
+    min-width: 130px;
+    width: 130px;
+    height: 122px; }
+  .zeolitic-intro__counter {
+    margin-bottom: 5px;
+    font-size: 14px; }
+  .zeolitic-intro__name {
+    font-size: 15px; } }
