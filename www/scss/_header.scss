@@ -148,6 +148,14 @@ HEADER
 
 @media screen and (max-width: 560px) {
 
+	.header {
+
+		&::before {
+			display: none;
+		}
+
+	}
+
 	.header__logo-img {
 		width: 48px;
 		height: 46px;
