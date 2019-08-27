@@ -1,0 +1,274 @@
+/**********
+ZEOLITIC INTRO
+**********/
+
+.zeolitic-intro {
+	display: flex;
+
+	margin-bottom: 40px;
+}
+
+.zeolitic-intro__info {
+	max-width: 800px;
+	margin-top: 160px;
+
+	z-index: 1;
+}
+
+.zeolitic-intro__title {
+	margin: 0;
+	padding: 20px 0;
+
+	position: relative;
+
+	font-family: $font-extrabold;
+	font-size: 120px;
+	white-space: nowrap;
+
+	&::after {
+		content: '';
+
+		width: 70px;
+		height: 6px;
+
+		position: absolute;
+		right: 0;
+		top: 20px;
+
+		background-color: #f8e587;
+	}
+
+	&::before {
+		content: '';
+
+		width: 70px;
+		height: 6px;
+
+		position: absolute;
+		left: 8px;
+		bottom: 10px;
+
+		background-color: #f8e587;
+	}
+
+}
+
+.zeolitic-intro__description {
+	max-width: 500px;
+	padding: 50px 55px 50px 0;
+
+	position: relative;
+
+	background-color: rgba(149, 168, 196, 0.15);
+
+	font-size: 15px;
+	line-height: 1.7;
+
+	&::before {
+		content: '';
+
+		width: 100%;
+		height: 100%;
+
+		position: absolute;
+		right: 100%;
+		top: 0;
+
+		background-color: rgba(149, 168, 196, 0.15);
+	}
+
+}
+
+.zeolitic-intro__preview {
+	z-index: 1;
+}
+
+.zeolitic-intro__counter {
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+	font-family: $font-bold;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.zeolitic-intro__name {
+	max-width: 280px;
+	margin-top: 0;
+	margin-bottom: 10;
+
+	font-family: $font-bold;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.zeolitic-intro__img-wrapper {
+	position: relative;
+
+	&::after {
+		content: '';
+
+		width: 197px;
+		height: 133px;
+
+		position: absolute;
+		left: -47px;
+		bottom: 70px;
+
+		background-image: url(../img/black-cat-arm-up.png);
+		background-size: 100%;
+	}
+
+}
+
+.zeolitic-intro__preview-img {
+	min-width: 400px;
+	width: 400px;
+	height: 390px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1290px) {
+
+	.zeolitic-intro__info {
+		max-width: 600px;
+		margin-right: 30px;
+	}
+
+	.zeolitic-intro__title {
+		font-size: 90px;
+	}
+
+}
+
+@media screen and (max-width: 1120px) {
+
+	.zeolitic-intro__title {
+		font-size: 60px;
+
+		&::before {
+			width: 50px;
+			height: 4px;
+
+			left: 5px;
+		}
+
+		&::after {
+			width: 50px;
+			height: 4px;
+
+			right: 40px;
+		}
+
+	}
+
+	.zeolitic-intro__description {
+		max-width: 400px;
+		padding: 25px 35px 25px 0;
+
+		line-height: 1.4;
+	}
+
+}
+
+@media screen and (max-width: 910px) {
+
+	.zeolitic-intro__info {
+		margin-top: 100px;
+	}
+
+	.zeolitic-intro__title {
+		font-size: 48px;
+
+		&::after {
+			right: 20px;
+		}
+
+	}
+
+	.zeolitic-intro__description {
+		max-width: 300px;
+
+		font-size: 14px;
+		line-height: 1.25;
+	}
+
+	.zeolitic-intro__img-wrapper {
+
+		&::after {
+			left: -55px;
+			bottom: 38px;
+
+			transform: scale(0.7);
+		}
+
+	}
+
+	.zeolitic-intro__preview-img {
+		min-width: 300px;
+		width: 300px;
+		height: 290px;
+	}
+
+}
+
+@media screen and (max-width: 725px) {
+
+	.zeolitic-intro__info {
+		margin-top: 45px;
+		margin-right: 90px;
+	}
+
+	.zeolitic-intro__title {
+		font-size: 35px;
+
+		&::before {
+			width: 30px;
+			height: 3px;
+
+			left: 0;
+		}
+
+		&::after {
+			width: 30px;
+			height: 3px;
+
+			right: 5px;
+			top: 15px;
+		}
+
+	}
+
+	.zeolitic-intro__description {
+		max-width: 200px;
+
+		font-size: 13px;
+	}
+
+	.zeolitic-intro__counter {
+		margin-bottom: 10px;
+
+		font-size: 18px;
+	}
+
+	.zeolitic-intro__name {
+		font-size: 20px;
+	}
+
+	.zeolitic-intro__preview-img {
+		min-width: 247px;
+		width: 247px;
+		height: 241px;
+	}
+
+}
+
+@media screen and (max-width: 630px) {
+
+	.zeolitic-intro__info {
+		margin-top: 0;
+		margin-right: 30px;
+	}
+
+}

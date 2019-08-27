@@ -19,6 +19,23 @@ HEADER
 
 	&--zeolitic {
 		background-image: linear-gradient(62deg, rgba(220,228,239,0.9) 0%, rgba(255,255,255,0.9) 100%), url(../img/background-zeolit.jpg);
+
+		color: $dark-blue;
+
+		&::before {
+			content: '';
+
+			width: 100%;
+			height: 335px;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 0;
+
+			background-image: url(../img/grid-for-bg.png);
+		}
+
 	}
 
 }
@@ -32,6 +49,8 @@ HEADER
 .header__nav-container {
 	display: flex;
 	align-items: center;
+
+	z-index: 1;
 }
 
 .header__logo-img {
@@ -48,7 +67,14 @@ HEADER
 	margin: 0;
 	padding: 50px 40px;
 
+	z-index: 1;
+
 	background-color: $transparent-white;
+
+	&--zeolitic {
+		background-color: rgba(221, 229, 239, 0.7);
+	}
+
 }
 
 .header__number {

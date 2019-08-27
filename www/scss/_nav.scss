@@ -18,6 +18,11 @@ NAV
 	font-size: 18px;
 	font-weight: 500;
 	color: $dark-purple;
+
+	&--blue {
+		color: $dark-blue;
+	}
+
 }
 
 /*RESPONSIVE*/

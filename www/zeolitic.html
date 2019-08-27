@@ -14,19 +14,19 @@
 	<header class="header header--zeolitic">
 		<div class="header__heading">
 			<div class="header__nav-container">
-				<a class="header__logo-link" href="#" aria-label="Ссылка на главную страницу">
+				<a class="header__logo-link" href="index.html" aria-label="Ссылка на главную страницу">
 					<img class="header__logo-img" src="img/logo.png" alt="Логотип сайта">
 				</a>
 
 				<nav class="nav">
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a class="nav__item-link" href="#">
+							<a class="nav__item-link nav__item-link--blue" href="#">
 								Контакты
 							</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__item-link" href="#">
+							<a class="nav__item-link nav__item-link--blue" href="#">
 								О нас
 							</a>
 						</li>
@@ -35,7 +35,7 @@
 
 			</div>
 
-			<ul class="header__contacts">
+			<ul class="header__contacts header__contacts--zeolitic">
 				<li class="header__number">8 (904) 391-68-82</li>
 				<li class="header__number">8 (904) 391-68-82</li>
 			</ul>
@@ -52,14 +52,17 @@
 			</div>
 			<div class="zeolitic-intro__preview">
 				<p class="zeolitic-intro__counter">
-					01.
+					02.
 				</p>
 				<h2 class="zeolitic-intro__name">
 					Цеолитовый наполнитель
 				</h2>
-				<picture>
-					<img class="zeolitic-intro__preview-img" src="img/white-friend-zeolit-preview.png" alt="Изображение цеолитового наполнителя">
-				</picture>
+				<div class="zeolitic-intro__img-wrapper">
+					<picture>
+						<source media="(max-width: 725px)" srcset="img/white-friend-zeolit-preview-tablet.png">
+						<img class="zeolitic-intro__preview-img" src="img/white-friend-zeolit-preview.png" alt="Изображение цеолитового наполнителя">
+					</picture>
+				</div>
 			</div>
 		</div>
 
