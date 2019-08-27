@@ -766,6 +766,8 @@ PRODUCT
   font-size: 39px;
   font-weight: 500;
   text-align: right; }
+  .product__title--absorbing {
+    font-size: 34px; }
 
 .product__description-container {
   max-width: 580px;
@@ -820,6 +822,8 @@ PRODUCT
     left: -75px; }
   .product__preview-image--mix {
     left: -205px; }
+  .product__preview-image--absorbing {
+    min-width: 295px; }
 
 .product__sizes-list {
   display: flex;
@@ -888,6 +892,10 @@ PRODUCT
     background-image: url(../img/cat-paws.png); }
   .product__size-preview--usual-3-liters::after {
     content: '3кг'; }
+  .product__size-preview--12-liters::after {
+    content: '12л';
+    right: -15px;
+    top: 15px; }
   .product__size-preview--20-liters::after {
     content: '20л';
     right: -15px;
@@ -906,6 +914,17 @@ PRODUCT
     content: '30кг';
     right: -10px;
     top: -15px; }
+  .product__size-preview--usual-absorbing::after {
+    right: 110px; }
+  .product__size-preview--usual-absorbing::before {
+    content: '';
+    width: 286px;
+    height: 216px;
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+    background-image: url(../img/white-puffy-cat-sitting.png);
+    background-size: 100%; }
 
 /*RESPONSIVE*/
 @media screen and (max-width: 1340px) {
@@ -963,6 +982,8 @@ PRODUCT
     height: 326px;
     right: -120px;
     top: -120px; }
+    .product__preview-image--absorbing {
+      min-width: 147px; }
   .product__sizes-list {
     justify-content: space-between;
     width: 750px;
@@ -982,6 +1003,11 @@ PRODUCT
       .product__size-preview--usual::after {
         right: 40px;
         top: 25px; }
+    .product__size-preview--12-liters {
+      margin-bottom: -30px; }
+      .product__size-preview--12-liters::after {
+        right: 10px;
+        top: 70px; }
     .product__size-preview--20-liters {
       margin-bottom: -30px; }
       .product__size-preview--20-liters::after {
@@ -999,6 +1025,8 @@ PRODUCT
     .product__size-preview--30-kg::after {
       right: 20px;
       top: 30px; }
+    .product__size-preview--usual-absorbing::before {
+      display: none; }
   .product__size-preview-img {
     transform: scale(0.5); }
     .product__size-preview-img--usual {
@@ -1018,6 +1046,9 @@ PRODUCT
     padding: 20px; }
   .product__title {
     max-width: 180px; }
+    .product__title--absorbing {
+      font-size: 17px;
+      text-align: left; }
   .product__description-container {
     width: 200px;
     padding: 15px;
@@ -1031,6 +1062,8 @@ PRODUCT
     left: calc(50% - 88.5px); }
     .product__preview-image--mix {
       left: 70px; }
+    .product__preview-image--absorbing {
+      top: -290px; }
   .product__sizes-list {
     width: 550px;
     background: linear-gradient(0deg, #eef3f9 50%, white 50%); }
@@ -1076,7 +1109,9 @@ PRODUCT
     .product__sizes-list--classic::before {
       display: none; }
   .product__size-preview {
-    margin: 0 0 -40px 0; } }
+    margin: 0 0 -40px 0; }
+  .product__size-preview-img--usual {
+    margin-right: 0; } }
 
 /**********
 ZEOLITIC INTRO

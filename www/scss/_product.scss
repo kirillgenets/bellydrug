@@ -93,6 +93,11 @@ PRODUCT
 	font-size: 39px;
 	font-weight: 500;
 	text-align: right;
+
+	&--absorbing {
+		font-size: 34px;
+	}
+
 }
 
 .product__description-container {
@@ -182,6 +187,10 @@ PRODUCT
 
 	&--mix {
 		left: -205px;
+	}
+
+	&--absorbing {
+		min-width: 295px;
 	}
 
 }
@@ -303,6 +312,17 @@ PRODUCT
 
 	}
 
+	&--12-liters {
+
+		&::after {
+			content: '12л';
+
+			right: -15px;
+			top: 15px;
+		}
+
+	}
+
 	&--20-liters {
 
 		&::after {
@@ -351,6 +371,28 @@ PRODUCT
 
 			right: -10px;
 			top: -15px;
+		}
+
+	}
+
+	&--usual-absorbing {
+
+		&::after {
+			right: 110px;
+		}
+
+		&::before {
+			content: '';
+
+			width: 286px;
+			height: 216px;
+
+			position: absolute;
+			left: 10px;
+			bottom: 50px;
+
+			background-image: url(../img/white-puffy-cat-sitting.png);
+			background-size: 100%;
 		}
 
 	}
@@ -473,6 +515,11 @@ PRODUCT
 
 		right: -120px;
 		top: -120px;
+
+		&--absorbing {
+			min-width: 147px;
+		}
+
 	}
 
 	.product__sizes-list {
@@ -505,6 +552,17 @@ PRODUCT
 			&::after {
 				right: 40px;
 				top: 25px;
+			}
+
+		}
+
+		&--12-liters {
+
+			margin-bottom: -30px;
+
+			&::after {
+				right: 10px;
+				top: 70px;
 			}
 
 		}
@@ -556,6 +614,14 @@ PRODUCT
 
 		}
 
+		&--usual-absorbing {
+
+			&::before {
+				display: none;
+			}
+
+		}
+
 	}
 
 	.product__size-preview-img {
@@ -592,6 +658,12 @@ PRODUCT
 
 	.product__title {
 		max-width: 180px;
+
+		&--absorbing {
+			font-size: 17px;
+			text-align: left;
+		}
+
 	}
 
 	.product__description-container {
@@ -623,6 +695,10 @@ PRODUCT
 
 		&--mix {
 			left: 70px;
+		}
+
+		&--absorbing {
+			top: -290px;
 		}
 
 	}
@@ -727,6 +803,14 @@ PRODUCT
 
 	.product__size-preview {
 		margin: 0 0 -40px 0;
+	}
+
+	.product__size-preview-img {
+
+		&--usual {
+			margin-right: 0;
+		}
+
 	}
 
 }
