@@ -682,6 +682,7 @@ GOODS
 *********/
 .goods {
   padding-top: 130px;
+  padding-bottom: 100px;
   color: #252a4a; }
 
 .goods__list {
