@@ -746,6 +746,23 @@ PRODUCT
     left: 370px;
     bottom: -10px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 45%, #e8e8e8 40%, #e8e8e8 55%, rgba(255, 255, 255, 0) 60%); }
+  .product__preview--silica::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 5px solid #000;
+    position: absolute;
+    left: 50%;
+    top: -10px; }
+  .product__preview--silica::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 5px solid #2aacff;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: rotate(30deg); }
 
 .product__heading {
   display: flex;
@@ -872,6 +889,8 @@ PRODUCT
     bottom: 0;
     z-index: 1;
     background-color: #eef3f9; }
+  .product__sizes-list--thin {
+    width: 600px; }
 
 .product__size-preview {
   margin-right: 100px;
@@ -909,6 +928,8 @@ PRODUCT
     left: 10px;
     top: 50%;
     background-image: url(../img/cat-paws.png); }
+  .product__size-preview--usual-silica::after {
+    content: '3.8кг'; }
   .product__size-preview--usual-3-liters::after {
     content: '3кг'; }
   .product__size-preview--12-liters::after {
@@ -1009,6 +1030,8 @@ PRODUCT
     margin-top: 40px; }
     .product__sizes-list--small {
       width: 650px; }
+    .product__sizes-list--thin {
+      width: 420px; }
   .product__size-preview {
     margin-right: 40px;
     margin-bottom: -25px; }
@@ -1046,6 +1069,8 @@ PRODUCT
       top: 30px; }
     .product__size-preview--usual-absorbing::before {
       display: none; }
+    .product__size-preview--usual-silica::after {
+      font-size: 10px; }
   .product__size-preview-img {
     transform: scale(0.5); }
     .product__size-preview-img--usual {
@@ -1058,8 +1083,13 @@ PRODUCT
 
 @media screen and (max-width: 768px) {
   .product__preview {
+    margin-top: 40px;
     padding-top: 90px;
     padding-bottom: 280px; }
+    .product__preview--silica::before {
+      display: none; }
+    .product__preview--silica::after {
+      display: none; }
   .product__heading {
     justify-content: space-between;
     padding: 20px; }
@@ -1083,6 +1113,8 @@ PRODUCT
       left: 70px; }
     .product__preview-image--absorbing {
       top: -290px; }
+    .product__preview-image--silica {
+      top: -290px; }
   .product__sizes-list {
     width: 550px;
     background: linear-gradient(0deg, #eef3f9 50%, white 50%); }
@@ -1091,6 +1123,8 @@ PRODUCT
     .product__sizes-list--classic::before {
       top: -150px;
       transform: scale(0.3); }
+    .product__sizes-list--thin {
+      width: 400px; }
   .product__size-preview {
     margin-right: 20px; }
   .product__size-preview-img--usual {
@@ -1103,6 +1137,7 @@ PRODUCT
 
 @media screen and (max-width: 560px) {
   .product__preview {
+    margin-top: 0;
     padding-top: 180px; }
     .product__preview--classic::before {
       left: 20px;

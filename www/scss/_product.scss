@@ -29,6 +29,36 @@ PRODUCT
 
 	}
 
+	&--silica {
+
+		&::before {
+			content: '';
+
+			width: 10px;
+			height: 10px;
+			border: 5px solid #000;
+
+			position: absolute;
+			left: 50%;
+			top: -10px;
+		}
+
+		&::after {
+			content: '';
+
+			width: 10px;
+			height: 10px;
+			border: 5px solid #2aacff;
+
+			position: absolute;
+			left: 50%;
+			bottom: 50px;
+
+			transform: rotate(30deg);
+		}
+
+	}
+
 }
 
 .product__heading {
@@ -243,6 +273,10 @@ PRODUCT
 
 	}
 
+	&--thin {
+		width: 600px;
+	}
+
 }
 
 .product__size-preview {
@@ -300,6 +334,14 @@ PRODUCT
 			top: 50%;
 
 			background-image: url(../img/cat-paws.png);
+		}
+
+	}
+
+	&--usual-silica {
+
+		&::after {
+			content: '3.8кг';
 		}
 
 	}
@@ -532,6 +574,10 @@ PRODUCT
 			width: 650px;
 		}
 
+		&--thin {
+			width: 420px;
+		}
+
 	}
 
 	.product__size-preview {
@@ -622,6 +668,14 @@ PRODUCT
 
 		}
 
+		&--usual-silica {
+
+			&::after {
+				font-size: 10px;
+			}
+
+		}
+
 	}
 
 	.product__size-preview-img {
@@ -646,8 +700,22 @@ PRODUCT
 @media screen and (max-width: 768px) {
 
 	.product__preview {
+		margin-top: 40px;
 		padding-top: 90px;
 		padding-bottom: 280px;
+
+		&--silica {
+
+			&::before {
+				display: none;
+			}
+
+			&::after {
+				display: none;
+			}
+
+		}
+
 	}
 
 	.product__heading {
@@ -701,6 +769,10 @@ PRODUCT
 			top: -290px;
 		}
 
+		&--silica {
+			top: -290px;
+		}
+
 	}
 
 	.product__sizes-list {
@@ -720,6 +792,10 @@ PRODUCT
 				transform: scale(0.3);
 			}
 
+		}
+
+		&--thin {
+			width: 400px;
 		}
 
 	}
@@ -748,6 +824,7 @@ PRODUCT
 @media screen and (max-width: 560px) {
 
 	.product__preview {
+		margin-top: 0;
 		padding-top: 180px;
 
 		&--classic {
