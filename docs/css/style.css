@@ -377,6 +377,8 @@ HEADER
       top: 0;
       z-index: 0;
       background-image: url(../img/grid-for-bg.png); }
+  .header--silica {
+    background: linear-gradient(62deg, #4166ba 0%, rgba(235, 236, 248, 0.95) 50%, rgba(252, 235, 252, 0.95) 100%), url(../img/background-silica.jpg); }
 
 .header__heading {
   display: flex;
@@ -1179,7 +1181,6 @@ ZEOLITIC INTRO
 .zeolitic-intro__name {
   max-width: 280px;
   margin-top: 0;
-  margin-bottom: 10;
   font-family: "Montseratt Bold", Tahoma, sans-serif;
   font-size: 25px;
   font-weight: 500; }
@@ -1310,3 +1311,28 @@ ZEOLITIC INTRO
     font-size: 14px; }
   .zeolitic-intro__name {
     font-size: 15px; } }
+
+/***********
+SILICA INTRO
+***********/
+.silica-intro {
+  display: flex;
+  align-items: center; }
+
+.silica-intro__counter {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
+  font-size: 25px;
+  font-weight: 500; }
+
+.silica-intro__name {
+  max-width: 280px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
+  font-size: 25px;
+  font-weight: 500; }
+
+.silica-intro__info {
+  max-width: 1000px; }

@@ -1,0 +1,31 @@
+/***********
+SILICA INTRO
+***********/
+
+.silica-intro {
+	display: flex;
+	align-items: center;
+}
+
+.silica-intro__counter {
+	margin-top: 20px;
+	margin-bottom: 15px;
+
+	font-family: $font-bold;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.silica-intro__name {
+	max-width: 280px;
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	font-family: $font-bold;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.silica-intro__info {
+	max-width: 1000px;
+}
