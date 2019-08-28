@@ -121,17 +121,254 @@ SILICA INTRO
 
 	transition: 0.3s;
 
-	&:hover {
-		opacity: 0.7;
+}
+
+/*RESPONSIVE*/
+
+/*HOVER, ACTIVE AND FOCUS ONLY ON DESKTOP*/
+
+@media screen and (min-width: 768px) {
+
+	.silica-intro__show-detailed {
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		&:active {
+			opacity: 0.5;
+			outline: none;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
 	}
 
-	&:active {
-		opacity: 0.5;
-		outline: none;
+}
+
+@media screen and (max-width: 1300px) {
+
+	.silica-intro__text {
+		padding-left: 50px;
+
+		&::before {
+			left: auto;
+			right: 0;
+			bottom: auto;
+			top: -180px;
+		}
+
 	}
 
-	&:focus {
-		outline: none;
+	.silica-intro__show-detailed {
+		margin-left: 50px;
+	}
+
+	.silica-intro__preview-img {
+    width: 500px;
+    height: 584px;
+    left: -100px;
+    bottom: -100px;
+	}
+
+}
+
+@media screen and (max-width: 1050px) {
+
+	.silica-intro {
+		padding-right: 10px;
+	}
+
+	.silica-intro__name, .silica-intro__counter {
+		font-size: 25px;
+	}
+
+	.silica-intro__name {
+		margin-bottom: 400px;
+	}
+
+	.silica-intro__preview-img {
+		width: 400px;
+		height: 484px;
+	}
+
+	.silica-intro__text {
+		width: 350px;
+		padding: 15px 40px;
+
+		&::before {
+			top: -130px;
+
+			transform: scale(0.5);
+		}
+
+	}
+
+	.silica-intro__title {
+		font-size: 24px;
+	}
+
+	.silica-intro__description {
+		font-size: 14px;
+		line-height: 1.3;
+	}
+
+}
+
+@media screen and (max-width: 1105px) {
+
+	.silica-intro__preview-img {
+		left: -50px;
+	}
+
+	.silica-intro__text {
+		margin-bottom: 5px;
+	}
+
+	.silica-intro__show-detailed {
+		width: 140px;
+		height: 40px;
+
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.silica-intro__name, .silica-intro__counter {
+		font-size: 20px;
+	}
+
+	.silica-intro__name {
+		margin-bottom: 300px;
+	}
+
+	.silica-intro__preview-img {
+		width: 300px;
+		height: 344px;
+
+		left: -30px;
+		bottom: -40px;
+	}
+
+	.silica-intro__text {
+		width: auto;
+		max-width: 300px;
+
+		&::before {
+			transform: scale(0.3);
+		}
+
+	}
+
+	.silica-intro__title {
+		font-size: 18px;
+	}
+
+	.silica-intro__description {
+		font-size: 13px;
+		line-height: 1.2;
+	}
+
+	.silica-intro__show-detailed {
+		width: 100px;
+		height: 30px;
+		margin-left: 40px;
+
+		font-size: 12px;
+	}
+
+}
+
+@media screen and (max-width: 560px) {
+
+	.silica-intro__name, .silica-intro__counter {
+		font-size: 18px;
+	}
+
+	.silica-intro__name {
+		margin-bottom: 250px;
+	}
+
+	.silica-intro__preview-img {
+		width: 200px;
+		height: 230px;
+
+		bottom: 0;
+	}
+
+	.silica-intro__text {
+
+		&::before {
+			right: auto;
+			left: -50px;
+		}
+
+	}
+
+	.silica-intro__title {
+		font-size: 15px;
+	}
+
+	.silica-intro__description {
+		font-size: 12px;
+	}
+
+}
+
+@media screen and (max-width: 450px) {
+
+	.silica-intro {
+		padding-right: 0;
+	}
+
+	.silica-intro__counter {
+		margin-bottom: 5px;
+
+		font-size: 13px;
+	}
+
+	.silica-intro__name {
+		padding-bottom: 10px;
+
+		font-size: 14px;
+
+		&::after {
+			height: 3px;
+		}
+
+	}
+
+	.silica-intro__preview-img {
+		width: 150px;
+		height: 165px;
+
+		left: -10px;
+		bottom: 80px;
+	}
+
+	.silica-intro__text {
+		padding-right: 10px;
+		padding-left: 15px;
+
+		&::before {
+			display: none;
+		}
+
+	}
+
+	.silica-intro__description {
+		line-height: 1.1;
+	}
+
+	.silica-intro__show-detailed {
+		width: 80px;
+		height: 25px;
+
+		font-size: 9px;
 	}
 
 }
