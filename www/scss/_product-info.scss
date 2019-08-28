@@ -1,0 +1,160 @@
+/*****************
+PRODUCT INFO MODAL
+*****************/
+
+.product-info__content {
+	max-width: 500px;
+  min-height: 500px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  padding: 15px;
+
+	position: absolute;
+  top: 60px;
+  left: 50%;
+  z-index: 2;
+
+  background-color: #fff;
+
+  text-align: center;
+
+  transform: translateX(-50%);
+}
+
+.product-info__title {
+	font-family: $font-bold;
+	font-size: 30px;
+	font-weight: 500;
+	color: $dark-blue;
+}
+
+.product-info__img {
+	width: 342px;
+	height: 379px;
+}
+
+.product-info__description {
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.product-info__cancel {
+	width: 170px;
+	height: 55px;
+	border: none;
+	border-radius: 40px;
+
+	background-color: #141516;
+
+	font-family: $font-bold;
+	font-size: 15px;
+	font-weight: 500;
+	color: #fff;
+
+	cursor: pointer;
+
+	transition: 0.3s;
+}
+
+/*RESPONSIVE*/
+
+/*HOVER, ACTIVE AND FOCUS ONLY ON DESKTOP*/
+
+@media screen and (min-width: 768px) {
+
+	.product-info__cancel {
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		&:active {
+			opacity: 0.5;
+			outline: none;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.product-info__content {
+		max-width: 400px;
+		min-height: 300px;
+	}
+
+	.product-info__title {
+		font-size: 24px;
+	}
+
+	.product-info__img {
+		width: 239px;
+		height: 265px;
+	}
+
+	.product-info__description {
+		font-size: 14px;
+		line-height: 1.25;
+	}
+
+	.product-info__cancel {
+		width: 100px;
+		height: 40px;
+
+		font-size: 12px;
+	}
+
+}
+
+@media screen and (max-width: 590px) {
+
+	.product-info__content {
+		max-width: 300px;
+		min-height: 200px;
+	}
+
+	.product-info__title {
+		font-size: 18px;
+	}
+
+	.product-info__img {
+		width: 167px;
+		height: 186px;
+	}
+
+	.product-info__description {
+		font-size: 12px;
+		line-height: 1.2;
+	}
+
+}
+
+@media screen and (max-width: 460px) {
+
+	.product-info__content {
+		width: 250px;
+	}
+
+	.product-info__title {
+		font-size: 16px;
+	}
+
+	.product-info__img {
+		width: 117px;
+		height: 130px;
+	}
+
+}
+
+@media screen and (max-width: 370px) {
+
+	.product-info__content {
+		width: 200px;
+	}
+
+}
