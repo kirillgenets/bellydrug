@@ -109,7 +109,7 @@ gulp.task('clean', function () {
 
 gulp.task('js', function() {
 
-	return gulp.src('www/js/script.js')
+	return gulp.src('www/js/main.js')
 		.pipe(minify({
 			ext:{
 	            min:'.min.js'
@@ -122,6 +122,7 @@ gulp.task('build', gulp.series(
 	'clean',
 	'copy',
 	'css',
+	'js',
 	'images',
 	'html'
 	));

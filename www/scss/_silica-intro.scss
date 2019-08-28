@@ -4,28 +4,134 @@ SILICA INTRO
 
 .silica-intro {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
+
+	padding-right: 50px;
+
+	position: relative;
+
+	color: #141516;
 }
 
 .silica-intro__counter {
 	margin-top: 20px;
 	margin-bottom: 15px;
 
-	font-family: $font-bold;
-	font-size: 25px;
+	font-family: $font-extrabold;
+	font-size: 35px;
 	font-weight: 500;
 }
 
 .silica-intro__name {
 	max-width: 280px;
 	margin-top: 0;
-	margin-bottom: 10px;
+	margin-bottom: 530px;
+	padding-bottom: 20px;
 
-	font-family: $font-bold;
-	font-size: 25px;
+	position: relative;
+
+	font-family: $font-extrabold;
+	font-size: 35px;
 	font-weight: 500;
+
+	&::after {
+		content: '';
+
+		height: 4px;
+		width: 50px;
+
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		background-color: #fbcaff;
+	}
+
+}
+
+.silica-intro__preview-img {
+	width: 600px;
+	height: 684px;
+
+	position: absolute;
+	left: -120px;
+	bottom: -170px;
 }
 
 .silica-intro__info {
 	max-width: 1000px;
+}
+
+.silica-intro__text {
+	width: 500px;
+	margin-bottom: 20px;
+	padding: 25px 60px 25px 170px;
+
+	position: relative;
+
+	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(233,236,245,1) 30%, rgba(233,236,245,1) 60%, rgba(255,255,255,0) 100%);
+
+	&::before {
+		content: '';
+
+		width: 286px;
+		height: 216px;
+
+		position: absolute;
+		left: -150px;
+		top: 0;
+
+		background-image: url(../img/white-puffy-cat-sitting.png);
+	}
+
+}
+
+.silica-intro__title {
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	font-family: $font-bold;
+	font-size: 28px;
+	font-weight: 500;
+}
+
+.silica-intro__description {
+	margin: 0;
+
+	font-size: 15px;
+	line-height: 1.7;
+}
+
+.silica-intro__show-detailed {
+	width: 170px;
+	height: 55px;
+	margin-left: 170px;
+	border: none;
+	border-radius: 40px;
+
+	background-color: #141516;
+
+	font-family: $font-bold;
+	font-size: 15px;
+	font-weight: 500;
+	color: #fff;
+
+	cursor: pointer;
+
+	transition: 0.3s;
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	&:active {
+		opacity: 0.5;
+		outline: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
 }
