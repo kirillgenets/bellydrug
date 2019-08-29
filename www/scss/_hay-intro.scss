@@ -334,4 +334,105 @@ HAY INTRO
 
 @media screen and (max-width: 768px) {
 
+	.hay-intro__titles-wrapper {
+		margin-bottom: 90px;
+	}
+
+	.hay-intro__name-wrapper {
+		margin-right: 40px;
+		padding-left: 0;
+	}
+
+	.hay-intro__name {
+		max-width: 100px;
+		margin-bottom: 10px;
+
+		font-size: 24px;
+	}
+
+	.hay-intro__show-detailed {
+		width: 80px;
+		height: 25px;
+
+		font-size: 10px;
+	}
+
+	.hay-intro__counter {
+		font-size: 18px;
+	}
+
+	.hay-intro__title {
+		max-width: 100px;
+
+		font-size: 60px;
+	}
+
+	.above-text {
+
+		&::before {
+			width: 71px;
+			height: 64px;
+
+			left: -30px;
+			bottom: 5px;
+		}
+
+	}
+
+	.hay-intro__description {
+		width: auto;
+		max-width: 300px;
+		padding: 15px;
+
+		&::before {
+			left: -20px;
+			top: -80px;
+
+			transform: scale(0.6);
+		}
+
+	}
+
+	.hay-intro__description-text {
+		font-size: 13px;
+		line-height: 1.15;
+	}
+
+	.hay-intro__preview-img {
+		width: 270px;
+    height: 434px;
+	}
+
+}
+
+@media screen and (max-width: 580px) {
+
+	.hay-intro__titles-wrapper {
+		margin-bottom: 50px;
+	}
+
+	.hay-intro__description {
+		max-width: 200px;
+		padding: 10px;
+		padding-left: 0;
+
+		&::before {
+			left: -70px;
+		}
+
+	}
+
+	.hay-intro__description-text {
+		font-size: 12px;
+		line-height: 1.1;
+	}
+
+	.hay-intro__preview-img {
+		width: 190px;
+    height: 304px;
+
+    right: 10px;
+    top: 170px;
+	}
+
 }
