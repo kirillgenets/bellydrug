@@ -229,3 +229,109 @@ HAY INTRO
 	}
 
 }
+
+@media screen and (max-width: 1355px) {
+
+	.hay-intro__name-wrapper {
+		padding-left: 20px;
+	}
+
+	.hay-intro__name {
+		font-size: 30px;
+	}
+
+	.hay-intro__show-detailed {
+		width: 100px;
+		height: 40px;
+
+		font-size: 12px;
+	}
+
+	.hay-intro__title {
+		max-width: 400px;
+
+		font-size: 90px;
+	}
+
+	.above-text {
+
+		&::before {
+			width: 102px;
+			height: 97px;
+
+			left: -40px;
+		}
+
+	}
+
+	.hay-intro__descriptions-list {
+		margin-left: -90px;
+	}
+
+}
+
+@media screen and (max-width: 1170px) {
+
+	.hay-intro__preview-img {
+    width: 337px;
+    height: 543px;
+    right: 140px;
+    top: -40px;
+	}
+
+}
+
+@media screen and (max-width: 1010px) {
+
+	.hay-intro__titles-wrapper {
+		margin-bottom: 80px;
+	}
+
+	.hay-intro__title-wrapper {
+		margin-top: 30px;
+	}
+
+	.hay-intro__descriptions-list {
+		flex-direction: column;
+
+		margin-left: 0;
+	}
+
+	.hay-intro__description {
+		margin-right: 0;
+		margin-bottom: 50px;
+		padding: 25px;
+		padding-left: 0;
+
+		&::after {
+			width: 200%;
+			height: 100%;
+
+			left: auto;
+			right: 0;
+			top: 0;
+		}
+
+		&::before {
+			left: 0;
+
+			transform: scale(0.8);
+		}
+
+	}
+
+	.hay-intro__description-text {
+		font-size: 14px;
+		line-height: 1.3;
+	}
+
+	.hay-intro__preview-img {
+    right: 40px;
+    top: 100px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
