@@ -1,33 +1,43 @@
-initEventListeners();
+if (document.querySelector('.product-info') != null) {
+	initModalEventListeners();
+}
 
-function showSilicaInfoModal() {
+if (document.querySelector('.silica-intro') != null) {
+	initSilicaEventListeners();
+}
 
-	document.querySelector('.product-info').classList.remove('hidden');
+if (document.querySelector('.hay-intro') != null) {
+	initHayEventListeners();
+}
+
+function showModal(element) {
+
+	element.classList.remove('hidden');
 
 }
 
-function hideSilicaInfoModal() {
+function hideModal(element) {
 
-	document.querySelector('.product-info').classList.add('hidden');
+	element.classList.add('hidden');
 
 }
 
 function onShowDetailedButtonClick() {
 
-	showSilicaInfoModal();
+	showModal(document.querySelector('.product-info'));
 
 }
 
 function onCloseDetailedButtonClick() {
 
-	hideSilicaInfoModal();
+	hideModal(document.querySelector('.product-info'));
 
 }
 
 function onOverlayEscKeyDown(evt) {
 
 	if (evt.key === 'Escape') {
-		hideSilicaInfoModal();
+		hideModal(document.querySelector('.product-info'));
 	}
 
 }
@@ -35,15 +45,27 @@ function onOverlayEscKeyDown(evt) {
 function onOverlayClick(evt) {
 
 	if (evt.target.className != 'product-info__content') {
-		hideSilicaInfoModal();
+		hideModal(document.querySelector('.product-info'));
 	}
 
 }
 
-function initEventListeners() {
+function initModalEventListeners() {
 
-	document.querySelector('.silica-intro__show-detailed').addEventListener('click', onShowDetailedButtonClick);
 	document.querySelector('.product-info__cancel').addEventListener('click', onCloseDetailedButtonClick);
 	document.querySelector('.product-info').addEventListener('click', onOverlayClick);
 	document.addEventListener('keydown', onOverlayEscKeyDown);
+
+}
+
+function initSilicaEventListeners() {
+
+	document.querySelector('.silica-intro__show-detailed').addEventListener('click', onShowDetailedButtonClick);
+
+}
+
+function initHayEventListeners() {
+
+	document.querySelector('.hay-intro__show-detailed').addEventListener('click', onShowDetailedButtonClick);
+
 }
