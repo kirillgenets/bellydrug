@@ -44,6 +44,8 @@ HEADER
 
 	&--hay {
 		background: linear-gradient(0deg, rgba(216, 201, 180, 0.9) 0%, rgba(216, 201, 180, 0.9) 100%), url(../img/background-hamster.png) no-repeat;
+
+		overflow: hidden;
 	}
 
 }

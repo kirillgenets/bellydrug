@@ -395,7 +395,8 @@ HEADER
   .header--silica {
     background: linear-gradient(62deg, #4166ba 0%, rgba(235, 236, 248, 0.95) 50%, rgba(252, 235, 252, 0.95) 100%), url(../img/background-silica.jpg); }
   .header--hay {
-    background: linear-gradient(0deg, rgba(216, 201, 180, 0.9) 0%, rgba(216, 201, 180, 0.9) 100%), url(../img/background-hamster.png) no-repeat; }
+    background: linear-gradient(0deg, rgba(216, 201, 180, 0.9) 0%, rgba(216, 201, 180, 0.9) 100%), url(../img/background-hamster.png) no-repeat;
+    overflow: hidden; }
 
 .header__heading {
   display: flex;
@@ -1691,9 +1692,11 @@ HAY INTRO
 
 .hay-intro__titles-wrapper {
   display: flex;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-bottom: 170px; }
 
 .hay-intro__name-wrapper {
+  margin-right: 30px;
   padding-left: 90px; }
 
 .hay-intro__name {
@@ -1727,6 +1730,9 @@ HAY INTRO
   cursor: pointer;
   transition: 0.3s; }
 
+.hay-intro__title-wrapper {
+  margin-top: 80px; }
+
 .hay-intro__counter {
   margin: 0;
   padding-left: 10px;
@@ -1738,7 +1744,7 @@ HAY INTRO
 .hay-intro__title {
   margin: 0;
   font-family: "Montseratt Bold", Tahoma, sans-serif;
-  font-size: 160px;
+  font-size: 120px;
   font-weight: 500;
   line-height: 1;
   color: #fff; }
@@ -1751,19 +1757,66 @@ HAY INTRO
   z-index: 0; }
   .above-text::before {
     content: '';
-    width: 208px;
-    height: 197px;
+    width: 146px;
+    height: 138px;
     position: absolute;
-    left: -80px;
+    left: -60px;
     bottom: 0;
     z-index: -1;
     background-image: url(../img/hamster.png);
     background-size: 100%; }
 
+.hay-intro__descriptions-list {
+  display: flex;
+  align-items: stretch;
+  list-style: none;
+  margin: 0;
+  margin-bottom: -50px;
+  padding: 0; }
+
+.hay-intro__description {
+  width: 330px;
+  box-sizing: border-box;
+  margin-right: 3px;
+  padding: 70px 25px 0 45px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3); }
+  .hay-intro__description::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    background-color: rgba(255, 255, 255, 0.3); }
+  .hay-intro__description::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -117px;
+    background-size: 100%;
+    transform: translateX(-50%); }
+  .hay-intro__description--hay::before {
+    width: 304px;
+    height: 117px;
+    background-image: url(../img/hay.png); }
+  .hay-intro__description--sawdust::before {
+    width: 300px;
+    height: 100px;
+    top: -100px;
+    background-image: url(../img/sawdust.png); }
+
+.hay-intro__description-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7; }
+
 .hay-intro__preview-img {
+  width: 482px;
+  height: 776px;
   position: absolute;
-  right: 0;
-  top: 0; }
+  right: 200px;
+  top: -90px; }
 
 /*RESPONSIVE*/
 /*HOVER, ACTIVE AND FOCUS ONLY ON DESKTOP*/
