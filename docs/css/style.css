@@ -394,6 +394,8 @@ HEADER
       background-image: url(../img/grid-for-bg.png); }
   .header--silica {
     background: linear-gradient(62deg, #4166ba 0%, rgba(235, 236, 248, 0.95) 50%, rgba(252, 235, 252, 0.95) 100%), url(../img/background-silica.jpg); }
+  .header--hay {
+    background: linear-gradient(0deg, rgba(216, 201, 180, 0.9) 0%, rgba(216, 201, 180, 0.9) 100%), url(../img/background-hamster.png) no-repeat; }
 
 .header__heading {
   display: flex;
@@ -1677,3 +1679,99 @@ PRODUCT INFO MODAL
 @media screen and (max-width: 370px) {
   .product-info__content {
     width: 200px; } }
+
+/************
+HAY INTRO
+************/
+.hay-intro {
+  position: relative; }
+
+.hay-intro__info {
+  max-width: 950px; }
+
+.hay-intro__titles-wrapper {
+  display: flex;
+  align-items: flex-start; }
+
+.hay-intro__name-wrapper {
+  padding-left: 90px; }
+
+.hay-intro__name {
+  max-width: 150px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: "Montseratt Extrabold", Tahoma, sans-serif;
+  font-size: 36px;
+  color: #fff; }
+  .hay-intro__name::before {
+    content: '';
+    width: 140px;
+    height: 3px;
+    position: absolute;
+    left: -160px;
+    top: 50%;
+    background-color: #c4b49e;
+    transform: translateY(-50%); }
+
+.hay-intro__show-detailed {
+  width: 170px;
+  height: 55px;
+  border: none;
+  border-radius: 40px;
+  background-color: #5e432f;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffe5d2;
+  cursor: pointer;
+  transition: 0.3s; }
+
+.hay-intro__counter {
+  margin: 0;
+  padding-left: 10px;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff; }
+
+.hay-intro__title {
+  margin: 0;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
+  font-size: 160px;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff; }
+
+.under-text {
+  z-index: 0; }
+
+.above-text {
+  position: relative;
+  z-index: 0; }
+  .above-text::before {
+    content: '';
+    width: 208px;
+    height: 197px;
+    position: absolute;
+    left: -80px;
+    bottom: 0;
+    z-index: -1;
+    background-image: url(../img/hamster.png);
+    background-size: 100%; }
+
+.hay-intro__preview-img {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+/*RESPONSIVE*/
+/*HOVER, ACTIVE AND FOCUS ONLY ON DESKTOP*/
+@media screen and (min-width: 768px) {
+  .hay-intro__show-detailed:hover {
+    opacity: 0.7; }
+  .hay-intro__show-detailed:active {
+    opacity: 0.5;
+    outline: none; }
+  .hay-intro__show-detailed:focus {
+    outline: none; } }

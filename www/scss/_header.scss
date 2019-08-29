@@ -42,6 +42,10 @@ HEADER
 		background: linear-gradient(62deg, rgba(65,102,186,1) 0%, rgba(235,236,248,0.95) 50%, rgba(252,235,252,0.95) 100%), url(../img/background-silica.jpg);
 	}
 
+	&--hay {
+		background: linear-gradient(0deg, rgba(216, 201, 180, 0.9) 0%, rgba(216, 201, 180, 0.9) 100%), url(../img/background-hamster.png) no-repeat;
+	}
+
 }
 
 .header__heading {
