@@ -48,6 +48,12 @@ HEADER
 		overflow: hidden;
 	}
 
+	&--cat {
+		background: linear-gradient(0deg, rgba(72,186,118,0.9) 0%, rgba(35,141,93,0.9) 100%), url(../img/background-cat.jpg) no-repeat;
+
+		overflow: hidden;
+	}
+
 }
 
 .header__heading {
@@ -83,6 +89,10 @@ HEADER
 
 	&--zeolitic {
 		background-color: rgba(221, 229, 239, 0.7);
+	}
+
+	&--cat {
+		color: #b1ffdc;
 	}
 
 }
