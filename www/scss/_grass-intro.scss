@@ -6,17 +6,72 @@ GRASS INTRO
 	color: #fff;
 }
 
+.grass-intro__title-wrapper {
+	max-width: 780px;
+	margin-bottom: 70px;
+	margin-left: 250px;
+
+	position: relative;
+
+	&::before {
+		content: '';
+
+		width: 55px;
+		height: 55px;
+		box-sizing: border-box;
+		border: 15px solid #ff9344;
+		border-radius: 50%;
+
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	&::after {
+		content: '';
+
+		width: 55px;
+		height: 55px;
+		box-sizing: border-box;
+
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		background-image: url(../img/x.png);
+		background-size: 100%;
+		background-position: center;
+	}
+
+}
+
 .grass-intro__title {
+	margin: 0;
+	margin-top: 15px;
+	margin-bottom: 20px;
+
 	font-family: $font-extrabold;
 	font-size: 54px;
+	text-align: center;
+}
+
+.grass-intro__name-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .grass-intro__counter {
+	margin: 0;
+	margin-right: 5px;
+
 	font-family: $font-bold;
 	font-size: 25px;
 }
 
 .grass-intro__name {
+	margin: 0;
+
 	font-family: $font-bold;
 	font-size: 33px;
 }
@@ -35,7 +90,7 @@ GRASS INTRO
 .grass-intro__ingredient {
 	max-width: 560px;
 	box-sizing: border-box;
-	margin-right: 125px;
+	margin-right: 170px;
 	margin-bottom: 60px;
 	padding: 20px 20px 20px 125px;
 
