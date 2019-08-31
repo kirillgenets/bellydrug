@@ -2063,6 +2063,8 @@ CAT INTRO
     font-size: 24px; } }
 
 @media screen and (max-width: 730px) {
+  .cat-intro {
+    margin-bottom: 50px; }
   .cat-intro__counter, .cat-intro__title {
     font-size: 20px; }
   .cat-intro__description {
