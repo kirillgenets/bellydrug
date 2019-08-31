@@ -713,7 +713,9 @@ MENU
       height: 60px;
       border-width: 2px; }
   .menu__item-image {
-    transform: scale(0.5); } }
+    transform: scale(0.4); }
+    .menu__item-image--clover {
+      transform: scale(0.8); } }
 
 /*********
 GOODS

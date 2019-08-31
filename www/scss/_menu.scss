@@ -94,7 +94,11 @@ MENU
 	}
 
 	.menu__item-image {
-		transform: scale(0.5);
+		transform: scale(0.4);
+
+		&--clover {
+			transform: scale(0.8);
+		}
 	}
 
 }
