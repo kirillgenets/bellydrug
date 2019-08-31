@@ -2185,5 +2185,57 @@ GRASS INTRO
     left: -70px;
     top: -15px;
     background-color: #fff; }
+  .grass-intro__ingredient::after {
+    content: '';
+    position: absolute;
+    background-size: 100%; }
   .grass-intro__ingredient:nth-child(even) {
     margin-right: 0; }
+  .grass-intro__ingredient--clover::before {
+    border-color: #7bb546; }
+  .grass-intro__ingredient--clover::after {
+    width: 239px;
+    height: 206px;
+    left: -120px;
+    top: -15px;
+    background-image: url(../img/clover.png); }
+  .grass-intro__ingredient--carrot::before {
+    border-color: #ff8e2a; }
+  .grass-intro__ingredient--carrot::after {
+    width: 247px;
+    height: 160px;
+    left: -120px;
+    top: 0;
+    background-image: url(../img/carrot.png); }
+  .grass-intro__ingredient--nettle::before {
+    border-color: #12d364; }
+  .grass-intro__ingredient--nettle::after {
+    width: 238px;
+    height: 160px;
+    left: -110px;
+    top: 15px;
+    background-image: url(../img/nettle.png); }
+  .grass-intro__ingredient--dandelion::before {
+    border-color: #edbf07; }
+  .grass-intro__ingredient--dandelion::after {
+    width: 145px;
+    height: 201px;
+    left: -60px;
+    top: -30px;
+    background-image: url(../img/dandelion.png); }
+  .grass-intro__ingredient--apples::before {
+    border-color: #ff6f66; }
+  .grass-intro__ingredient--apples::after {
+    width: 237px;
+    height: 166px;
+    left: -110px;
+    top: 15px;
+    background-image: url(../img/apples.png); }
+  .grass-intro__ingredient--chamomile::before {
+    border-color: #b9adb0; }
+  .grass-intro__ingredient--chamomile::after {
+    width: 227px;
+    height: 215px;
+    left: -110px;
+    top: -15px;
+    background-image: url(../img/chamomile.png); }

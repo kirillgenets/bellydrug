@@ -116,8 +116,124 @@ GRASS INTRO
 		background-color: #fff;
 	}
 
+	&::after {
+		content: '';
+
+		position: absolute;
+
+		background-size: 100%;
+	}
+
 	&:nth-child(even) {
 		margin-right: 0;
+	}
+
+	&--clover {
+
+		&::before {
+			border-color: #7bb546;
+		}
+
+		&::after {
+			width: 239px;
+			height: 206px;
+
+			left: -120px;
+			top: -15px;
+
+			background-image: url(../img/clover.png);
+		}
+
+	}
+
+	&--carrot {
+
+		&::before {
+			border-color: #ff8e2a;
+		}
+
+		&::after {
+			width: 247px;
+			height: 160px;
+
+			left: -120px;
+			top: 0;
+
+			background-image: url(../img/carrot.png);
+		}
+
+	}
+
+	&--nettle {
+
+		&::before {
+			border-color: #12d364;
+		}
+
+		&::after {
+			width: 238px;
+			height: 160px;
+
+			left: -110px;
+			top: 15px;
+
+			background-image: url(../img/nettle.png);
+		}
+
+	}
+
+	&--dandelion {
+
+		&::before {
+			border-color: #edbf07;
+		}
+
+		&::after {
+			width: 145px;
+			height: 201px;
+
+			left: -60px;
+			top: -30px;
+
+			background-image: url(../img/dandelion.png);
+		}
+
+	}
+
+	&--apples {
+
+		&::before {
+			border-color: #ff6f66;
+		}
+
+		&::after {
+			width: 237px;
+			height: 166px;
+
+			left: -110px;
+			top: 15px;
+
+			background-image: url(../img/apples.png);
+		}
+
+	}
+
+	&--chamomile {
+
+		&::before {
+			border-color: #b9adb0;
+		}
+
+		&::after {
+			width: 227px;
+			height: 215px;
+
+			left: -110px;
+			top: -15px;
+
+			background-image: url(../img/chamomile.png);
+		}
+
 	}
 
 }
