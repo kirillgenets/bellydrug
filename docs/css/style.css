@@ -401,6 +401,9 @@ HEADER
     min-height: 100vh;
     background: linear-gradient(0deg, rgba(72, 186, 118, 0.9) 0%, rgba(35, 141, 93, 0.9) 100%), url(../img/background-cat.jpg) no-repeat;
     overflow: hidden; }
+  .header--grass {
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(6, 203, 94, 0.9) 0%, rgba(4, 150, 80, 0.9) 100%), url(../img/background-mouse.jpg); }
 
 .header__heading {
   display: flex;
@@ -427,7 +430,8 @@ HEADER
   .header__contacts--zeolitic {
     background-color: rgba(221, 229, 239, 0.7); }
   .header__contacts--cat {
-    color: #b1ffdc; }
+    color: #b1ffdc;
+    background-color: rgba(255, 255, 255, 0.1); }
 
 .header__number {
   margin-right: 30px;
