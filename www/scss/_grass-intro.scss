@@ -1,0 +1,68 @@
+/************
+GRASS INTRO
+************/
+
+.grass-intro {
+	color: #fff;
+}
+
+.grass-intro__title {
+	font-family: $font-extrabold;
+	font-size: 54px;
+}
+
+.grass-intro__counter {
+	font-family: $font-bold;
+	font-size: 25px;
+}
+
+.grass-intro__name {
+	font-family: $font-bold;
+	font-size: 33px;
+}
+
+.grass-intro__ingredient-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	list-style: none;
+
+	margin: 0;
+	margin-left: 40px;
+	padding: 0;
+}
+
+.grass-intro__ingredient {
+	max-width: 560px;
+	box-sizing: border-box;
+	margin-right: 125px;
+	margin-bottom: 60px;
+	padding: 20px 20px 20px 125px;
+
+	position: relative;
+
+	background-color: rgba(255, 255, 255, 0.1);
+
+	font-size: 15px;
+	line-height: 1.2;
+
+	&::before {
+		content: '';
+
+		width: 160px;
+		height: 160px;
+		border: 6px solid #000;
+		border-radius: 50%;
+
+		position: absolute;
+		left: -70px;
+		top: -15px;
+
+		background-color: #fff;
+	}
+
+	&:nth-child(even) {
+		margin-right: 0;
+	}
+
+}

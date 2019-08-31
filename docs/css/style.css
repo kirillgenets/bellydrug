@@ -430,8 +430,11 @@ HEADER
   .header__contacts--zeolitic {
     background-color: rgba(221, 229, 239, 0.7); }
   .header__contacts--cat {
-    color: #b1ffdc;
-    background-color: rgba(255, 255, 255, 0.1); }
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #b1ffdc; }
+  .header__contacts--grass {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff; }
 
 .header__number {
   margin-right: 30px;
@@ -511,6 +514,8 @@ NAV
     color: #252a4a; }
   .nav__item-link--green {
     color: #b1ffdc; }
+  .nav__item-link--white {
+    color: #fff; }
 
 /*RESPONSIVE*/
 /*HOVER + ACTIVE эффекты только при разрешении выше планшетного*/
@@ -2094,3 +2099,52 @@ CAT INTRO
   .cat-intro__preview-img {
     margin-top: -30px;
     margin-left: -70px; } }
+
+/************
+GRASS INTRO
+************/
+.grass-intro {
+  color: #fff; }
+
+.grass-intro__title {
+  font-family: "Montseratt Extrabold", Tahoma, sans-serif;
+  font-size: 54px; }
+
+.grass-intro__counter {
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
+  font-size: 25px; }
+
+.grass-intro__name {
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
+  font-size: 33px; }
+
+.grass-intro__ingredient-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  margin-left: 40px;
+  padding: 0; }
+
+.grass-intro__ingredient {
+  max-width: 560px;
+  box-sizing: border-box;
+  margin-right: 125px;
+  margin-bottom: 60px;
+  padding: 20px 20px 20px 125px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 15px;
+  line-height: 1.2; }
+  .grass-intro__ingredient::before {
+    content: '';
+    width: 160px;
+    height: 160px;
+    border: 6px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: -70px;
+    top: -15px;
+    background-color: #fff; }
+  .grass-intro__ingredient:nth-child(even) {
+    margin-right: 0; }
