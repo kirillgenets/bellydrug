@@ -13,7 +13,7 @@
 	</head>
 	<body>
 
-	<header class="header header--about">
+	<header class="header header--contacts">
 		<div class="header__heading">
 			<div class="header__nav-container">
 				<a class="header__logo-link" href="index.html" aria-label="Ссылка на главную страницу">
@@ -42,14 +42,11 @@
 		</div>
 
 		<div class="contacts">
-			<h1 class="visually-hidden">
-				Как с нами связаться
+			<h1 class="contacts__title">
+				Форма обратной связи
 			</h1>
 			<form class="contacts__form" action="">
-				<h2 class="contacts__title">
-					Форма обратной связи
-				</h2>
-				<fieldset class="contacts__info">
+				<fieldset class="contacts__fieldset contacts__fieldset--info">
 					<legend class="visually-hidden">
 						Введите информацию для связи
 					</legend>
@@ -74,15 +71,19 @@
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset class="contacts__send">
+				<fieldset class="contacts__fieldset contacts__fieldset--send">
 					<legend class="visually-hidden">
 						Отправьте нам свои данные
 					</legend>
-					<button class="contacts__submit" type="submit">Отправить</button>
-					<input class="contacts__agree" type="checkbox" id="agree">
-					<label class="contacts__agree-label" for="agree">
-						Я согласен(а) на обработку персональных данных
-					</label>
+					<button class="contacts__submit" type="submit">
+						Отправить
+					</button>
+					<div class="contacts__agree-wrapper">
+						<input class="contacts__agree visually-hidden" type="checkbox" id="agree">
+						<label class="contacts__agree-label" for="agree">
+							Я согласен(а) на обработку персональных данных
+						</label>
+					</div>
 				</fieldset>
 			</form>
 		</div>

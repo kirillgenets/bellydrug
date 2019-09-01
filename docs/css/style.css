@@ -413,6 +413,10 @@ HEADER
     min-height: 100vh;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), url(../img/background-about.jpg) no-repeat;
     background-size: 100%; }
+  .header--contacts {
+    height: 100%;
+    background: linear-gradient(42deg, rgba(255, 255, 255, 0.85) 0%, #ecf2f9 100%), url(../img/background-contacts.jpg) no-repeat;
+    background-size: 100%; }
 
 .header__heading {
   display: flex;
@@ -2502,12 +2506,72 @@ ABOUT
 /*********
 CONTACTS
 *********/
+.contacts {
+  width: 940px;
+  margin: 120px auto 300px auto;
+  padding-top: 25px;
+  position: relative;
+  background-color: #fff;
+  transform: translateX(-50px);
+  box-shadow: 0px 1px 117px 0px rgba(0, 0, 0, 0.16); }
+  .contacts::before {
+    content: '';
+    width: 169px;
+    height: 188px;
+    position: absolute;
+    left: 50%;
+    top: -157px;
+    background-image: url(../img/cat-from-top.png);
+    background-size: 100%;
+    transform: translateX(-50%); }
+
+.contacts__title {
+  max-width: 235px;
+  margin: 0 auto;
+  position: relative;
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #487fc4;
+  text-align: center; }
+  .contacts__title::before {
+    content: '';
+    width: 25px;
+    height: 22px;
+    position: absolute;
+    left: -35px;
+    top: -3px;
+    background-image: url(../img/blue-paw.png); }
+
+.contacts__form {
+  display: flex;
+  margin-top: 25px; }
+
+.contacts__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #b9bbbe;
+  border-right: 1px solid #b9bbbe;
+  margin: 0;
+  padding-bottom: 50px; }
+  .contacts__fieldset:last-child {
+    border-right: none; }
+
 .contacts__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  padding-top: 60px; }
 
 .contacts__item {
+  margin: 0;
+  margin-bottom: 45px;
   padding-left: 30px;
   position: relative; }
   .contacts__item::before {
@@ -2540,3 +2604,70 @@ CONTACTS
     font-family: 'Montseratt Medium', 'Tahoma', sans-serif;
     color: #487fc4;
     outline: none; }
+
+.contacts__submit {
+  width: 190px;
+  height: 55px;
+  border: none;
+  border-radius: 35px;
+  margin: 0 auto;
+  margin-top: 135px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #237bff;
+  box-shadow: 0px 0px 24px 0px rgba(0, 51, 218, 0.3);
+  font-family: "Montseratt Bold", Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer; }
+  .contacts__submit::before {
+    content: '';
+    width: 26px;
+    height: 22px;
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    background-image: url(../img/back-arrow.png);
+    transform: translateY(-50%); }
+
+.contacts__agree-wrapper {
+  margin: 0 auto;
+  max-width: 200px; }
+
+.contacts__agree-label {
+  position: relative;
+  font-family: "Montseratt Regular", Tahoma, sans-serif;
+  font-size: 14px;
+  color: #9aa6b7;
+  cursor: pointer; }
+  .contacts__agree-label::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    background-color: #dde5f0;
+    cursor: pointer; }
+
+.contacts__agree:checked + .contacts__agree-label::before {
+  background-image: url(../img/tick.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/*RESPONSIVE*/
+/*HOVER + ACTIVE ONLY ON DESKTOP*/
+@media screen and (min-width: 768px) {
+  .contacts__submit {
+    transition: 0.3s; }
+    .contacts__submit:hover {
+      opacity: 0.7; }
+    .contacts__submit:active {
+      opacity: 0.5;
+      outline: none; }
+    .contacts__submit:focus {
+      outline: none; } }
