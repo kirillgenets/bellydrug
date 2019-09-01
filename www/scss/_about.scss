@@ -1,0 +1,181 @@
+/**********
+ABOUT
+**********/
+
+.about {
+	padding-top: 50px;
+	padding-bottom: 200px;
+
+	position: relative;
+
+	&::before {
+		content: '';
+
+		width: 550px;
+		height: 550px;
+		border: 5px solid #f2dd2c;
+		border-radius: 50%;
+
+		position: absolute;
+		left: -530px;
+		top: 0;
+	}
+
+	&::after {
+		content: '';
+
+		width: 106px;
+		height: 58px;
+
+		position: absolute;
+		left: 50px;
+		bottom: 0;
+
+		background-image: url(../img/paw-blue.png);
+	}
+
+}
+
+.about__list {
+	display: flex;
+	flex-wrap: wrap;
+
+	list-style: none;
+
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+
+	box-shadow: 0px 1px 117px 0px rgba(0, 0, 0, 0.16);
+
+	transform: translateX(-30px);
+
+	&::after {
+		content: '';
+
+		width: 380px;
+		height: 166px;
+
+		position: absolute;
+		left: 50%;
+		bottom: -200px;
+
+		background-image: url(../img/cat-man-sitting.png);
+		background-size: 100%;
+
+		transform: translateX(-50%);
+	}
+
+}
+
+.about__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 240px;
+	height: 195px;
+	box-sizing: border-box;
+	border: 1px solid #dde5f0;
+	padding: 0 20px;
+
+	background-color: #fff;
+
+	text-align: center;
+}
+
+.about__item-icon {
+	margin-bottom: 15px;
+}
+
+.about__item-text {
+	margin: 0;
+	padding: 0;
+
+	font-family: $font-bold;
+	font-size: 16px;
+	font-weight: 500;
+	color: #2f4b6e;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1301px) {
+
+	.about__list {
+		max-width: 960px;
+	}
+
+}
+
+@media screen and (max-width: 1060px) {
+
+	.about__list {
+		max-width: 720px;
+	}
+
+}
+
+@media screen and (max-width: 825px) {
+
+	.about {
+
+		&::after {
+			display: none;
+		}
+
+	}
+
+	.about__list {
+		max-width: 480px;
+	}
+
+}
+
+@media screen and (max-width: 580px) {
+
+	.about__list {
+		max-width: 336px;
+	}
+
+	.about__item {
+		width: 168px;
+		height: 137px;
+
+		padding: 0 5px;
+	}
+
+	.about__item-icon {
+		margin-bottom: 5px;
+	}
+
+	.about__item-text {
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (max-width: 380px) {
+
+	.about__list {
+		max-width: 168px;
+
+		transform: translateX(-10px);
+
+		&::after {
+			left: -110px;
+			transform: scale(0.8);
+		}
+
+	}
+
+	.about__item {
+
+		&--empty {
+			display: none;
+		}
+
+	}
+
+}

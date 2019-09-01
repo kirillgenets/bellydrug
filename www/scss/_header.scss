@@ -60,6 +60,13 @@ HEADER
 		background-position: center;
 	}
 
+	&--about  {
+		min-height: 100vh;
+
+		background: linear-gradient(0deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.95) 100%), url(../img/background-about.jpg) no-repeat;
+		background-size: 100%;
+	}
+
 }
 
 .header__heading {
@@ -107,6 +114,12 @@ HEADER
 		background-color: rgba(255, 255, 255, 0.1);
 
 		color: #fff;
+	}
+
+	&--lightblue {
+		background-color: rgba(221, 229, 239, 0.7);
+
+		color: #2f4b6e;
 	}
 
 }
