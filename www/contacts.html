@@ -8,6 +8,7 @@
 		<link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
 		<link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
 		<link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font">
+		<link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 	<body>
@@ -53,23 +54,23 @@
 						Введите информацию для связи
 					</legend>
 					<ul class="contacts__list">
-						<li class="contacts__item">
+						<li class="contacts__item contacts__item--name">
 							<label class="contacts__field-label visually-hidden" for="name">
 								Введите Ваше имя
 							</label>
-							<input class="contacts__field contacts__field--name" id="name" type="text" placeholder="Иван Иванов">
+							<input class="contacts__field" id="name" type="text" placeholder="Ваше имя">
 						</li>
-						<li class="contacts__item">
+						<li class="contacts__item contacts__item--phone">
 							<label class="contacts__field-label visually-hidden" for="phone">
 								Введите Ваш номер телефона
 							</label>
-							<input class="contacts__field contacts__field--phone" id="phone" type="tel" placeholder="Номер телефона">
+							<input class="contacts__field" id="phone" type="tel" placeholder="Номер телефона">
 						</li>
-						<li class="contacts__item">
+						<li class="contacts__item contacts__item--message">
 							<label class="contacts__field-label visually-hidden" for="message">
 								Введите Ваше краткое сообщение нам
 							</label>
-							<input class="contacts__field contacts__field--message" id="message" type="text" placeholder="Краткое сообщение">
+							<input class="contacts__field" id="message" type="text" placeholder="Краткое сообщение">
 						</li>
 					</ul>
 				</fieldset>

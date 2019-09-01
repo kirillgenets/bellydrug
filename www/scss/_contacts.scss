@@ -1,0 +1,79 @@
+/*********
+CONTACTS
+*********/
+
+.contacts__list {
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+}
+
+.contacts__item {
+	padding-left: 30px;
+
+	position: relative;
+
+	&::before {
+		content: '';
+
+		width: 21px;
+		height: 21px;
+
+		position: absolute;
+		left: 0;
+		top: 5px;
+
+		background-size: 100%;
+	}
+
+	&--name {
+
+		&::before {
+			background-image: url(../img/user.png);
+		}
+
+	}
+
+	&--phone {
+
+		&::before {
+			background-image: url(../img/call.png);
+		}
+
+	}
+
+	&--message {
+
+		&::before {
+			background-image: url(../img/email.png);
+		}
+
+	}
+
+}
+
+.contacts__field {
+	width: 265px;
+	box-sizing: border-box;
+	border: 0;
+	border-bottom: 1px solid #b9bbbe;
+	padding: 10px 5px;
+
+	position: relative;
+
+	font-family: $font-regular;
+	font-size: 15px;
+
+	background-color: rgba(255, 255, 255, 0);
+
+	&:focus {
+		border-color: #487fc4;
+
+		font-family: 'Montseratt Medium', 'Tahoma', sans-serif;
+		color: #487fc4;
+
+		outline: none;
+	}
+
+}

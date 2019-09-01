@@ -9,6 +9,13 @@ TYPOGRAPHY
 	font-display: swap;
 }
 
+@font-face{
+	font-family: 'Montseratt Regular';
+	src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+		url('../fonts/Montserrat-Regular.woff') format('woff');
+	font-display: swap;
+}
+
 @font-face {
 	font-family: 'Montseratt Bold';
 	src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),

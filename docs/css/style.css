@@ -354,6 +354,11 @@ TYPOGRAPHY
   font-display: swap; }
 
 @font-face {
+  font-family: 'Montseratt Regular';
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-display: swap; }
+
+@font-face {
   font-family: 'Montseratt Bold';
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-display: swap; }
@@ -2493,3 +2498,45 @@ ABOUT
       transform: scale(0.8); }
   .about__item--empty {
     display: none; } }
+
+/*********
+CONTACTS
+*********/
+.contacts__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.contacts__item {
+  padding-left: 30px;
+  position: relative; }
+  .contacts__item::before {
+    content: '';
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    background-size: 100%; }
+  .contacts__item--name::before {
+    background-image: url(../img/user.png); }
+  .contacts__item--phone::before {
+    background-image: url(../img/call.png); }
+  .contacts__item--message::before {
+    background-image: url(../img/email.png); }
+
+.contacts__field {
+  width: 265px;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 1px solid #b9bbbe;
+  padding: 10px 5px;
+  position: relative;
+  font-family: "Montseratt Regular", Tahoma, sans-serif;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0); }
+  .contacts__field:focus {
+    border-color: #487fc4;
+    font-family: 'Montseratt Medium', 'Tahoma', sans-serif;
+    color: #487fc4;
+    outline: none; }
