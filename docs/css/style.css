@@ -415,6 +415,7 @@ HEADER
     background-size: 100%; }
   .header--contacts {
     height: 100%;
+    padding-bottom: 190px;
     background: linear-gradient(42deg, rgba(203, 214, 230, 0.8) 0%, rgba(236, 242, 249, 0.8) 100%), url(../img/background-contacts.jpg) no-repeat;
     background-size: cover; }
 
@@ -2508,7 +2509,7 @@ CONTACTS
 *********/
 .contacts {
   width: 940px;
-  margin: 190px auto 200px auto;
+  margin: 190px auto 0;
   padding-top: 25px;
   position: relative;
   background-color: #fff;
