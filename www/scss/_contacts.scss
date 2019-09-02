@@ -31,6 +31,20 @@ CONTACTS
 		transform: translateX(-50%);
 	}
 
+	&::after {
+		content: '';
+
+		width: 30px;
+		height: 30px;
+		box-sizing: border-box;
+		border: 8px solid #237bff;
+		border-radius: 50%;
+
+		position: absolute;
+		left: 115px;
+		top: -50px;
+	}
+
 }
 
 .contacts__title {
@@ -65,6 +79,36 @@ CONTACTS
 	display: flex;
 
 	margin-top: 25px;
+
+	position: relative;
+
+	&::before {
+		content: '';
+
+		width: 163px;
+		height: 183px;
+
+		position: absolute;
+		left: -60px;
+		top: -115px;
+
+		background-image: url(../img/curve.png);
+	}
+
+	&::after {
+		content: '';
+
+		width: 50px;
+		height: 50px;
+		box-sizing: border-box;
+		border: 8px solid #f29a00;
+		border-radius: 50%;
+
+		position: absolute;
+		right: -25px;
+		bottom: -25px;
+	}
+
 }
 
 .contacts__fieldset {
@@ -81,6 +125,41 @@ CONTACTS
 
 	&:last-child {
 		border-right: none;
+	}
+
+	&--send {
+		position: relative;
+
+		&::before {
+			content: '';
+
+			width: 50px;
+			height: 50px;
+
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+
+			background-color: #fff;
+		}
+
+		&::after {
+			content: '';
+
+			width: 102px;
+			height: 112px;
+
+			position: absolute;
+			right: -10px;
+			bottom: -60px;
+			z-index: 2;
+
+			background-image: url(../img/curve.png);
+			background-size: 100%;
+			transform: rotate(53deg);
+		}
+
 	}
 
 }
