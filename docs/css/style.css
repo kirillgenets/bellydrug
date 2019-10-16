@@ -768,7 +768,7 @@ GOODS
 
 @media screen and (max-width: 768px) {
   .goods {
-    padding-top: 180px; } }
+    padding-top: 80px; } }
 
 @media screen and (max-width: 560px) {
   .goods {
@@ -908,6 +908,24 @@ PRODUCT
     left: -205px; }
   .product__preview-image--absorbing {
     min-width: 295px; }
+
+.product--no-preview .product__sizes-list {
+  margin-top: 0; }
+
+.product--no-preview .product__fodder-image {
+  margin-right: 0;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  z-index: 5;
+  transform: translate(50%, -50%); }
+
+.product--no-preview .product__sizes-list-wrapper {
+  width: 970px;
+  margin: 0 auto;
+  position: relative; }
+  .product--no-preview .product__sizes-list-wrapper--thin {
+    width: 600px; }
 
 .product__sizes-list {
   display: flex;
@@ -1072,6 +1090,14 @@ PRODUCT
     top: -120px; }
     .product__preview-image--absorbing {
       min-width: 147px; }
+  .product--no-preview .product__sizes-list-wrapper {
+    width: 750px; }
+    .product--no-preview .product__sizes-list-wrapper--small {
+      width: 650px; }
+    .product--no-preview .product__sizes-list-wrapper--thin {
+      width: 420px; }
+  .product--no-preview .product__sizes-list {
+    margin-top: 0; }
   .product__sizes-list {
     justify-content: space-between;
     width: 750px;
@@ -1163,6 +1189,17 @@ PRODUCT
       top: -290px; }
     .product__preview-image--silica {
       top: -290px; }
+  .product--no-preview .product__sizes-list-wrapper {
+    width: 550px; }
+    .product--no-preview .product__sizes-list-wrapper--small {
+      width: 450px; }
+    .product--no-preview .product__sizes-list-wrapper--thin {
+      width: 400px; }
+  .product--no-preview .product__fodder-image {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    top: 50%; }
   .product__sizes-list {
     width: 550px;
     background: linear-gradient(0deg, #eef3f9 50%, white 50%); }
@@ -1201,6 +1238,15 @@ PRODUCT
     .product__preview-image--mix {
       top: -230px;
       left: calc(50% - 120px); }
+  .product--no-preview .product__sizes-list-wrapper {
+    width: 200px; }
+    .product--no-preview .product__sizes-list-wrapper--small {
+      width: 200px; }
+  .product--no-preview .product__fodder-image {
+    min-width: 65px;
+    width: 65px;
+    height: 65px;
+    top: 0; }
   .product__sizes-list {
     flex-direction: column;
     align-items: center;
